@@ -30,6 +30,16 @@ const socketData = sockets => {
     return {sockets: sockets.length, linkstr, maxlink};
 };
 
+const compactProperties = props => {
+    if(!props) return;
+
+    let newProps = {};
+    for(let prop of props){
+        let key = prop.name.toLowerCase().replace(" ", "_");
+        if(prop.values && prop.values[0]) newProps[key] = prop.values[0][0];
+    }
+}
+
 export const parseItem = (stash, it) => {
     it.fullName = (it.name ? it.name + " " : "") + it.typeLine;
 
@@ -39,6 +49,8 @@ export const parseItem = (stash, it) => {
     //create price tag
     it.priceTag = new PriceTag(it.note, stash.stash);
     it.sockets = socketData(it.sockets);
+    it.newProps = compactProperties(it.properties);
+    it.newReqs = compactProperties(it.requirements);
 
     itemFilter(stash, it);
 };

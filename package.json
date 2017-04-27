@@ -36,6 +36,7 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "colors": "^1.1.2",
+    "socket.io": "^1.7.3",
     "source-map-support": "^0.4.14"
   }
 }

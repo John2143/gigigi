@@ -1,7 +1,5 @@
-let funcs = [];
-export const register = func => {
-    funcs.push(func);
-};
+import "./filters/flips.js";
+import {emit} from "./server.js";
 
 export const itemToWhisper = (stash, it) => {
     // stashtypes: PremiumStash, EssenceStash, CurrencyStash, DivinationCardStash, QuadStash
@@ -14,4 +12,15 @@ export const itemToWhisper = (stash, it) => {
 
 export default (stash, it) => {
     if(it.league !== "Legacy") return;
+    for(let filter of filterFuncs){
+        if(filter.func(stash, it)){
+            emit("alert", {
+                desc: filter.desc,
+                whisper: itemToWhisper(stash, it),
+                sound: filter.sound,
+                it, stash,
+            });
+            break;
+        }
+    }
 };

@@ -1,26 +1,12 @@
-import http from "http";
-import https from "https";
-global.fs = require("fs");
+require('source-map-support').install();
+import "./global.js";
+
 import {parseStash} from "./parser.js";
+import {emit} from "./server.js";
 
 const rateLimit = 2500;
 const savePath = "./save.id";
 
-global.GET = url => {
-    return new Promise((resolve, reject) => {
-        (url.startsWith("https") ? https : http).get(url, res => {
-            let rawdata = "";
-            res.on("data", chunk => rawdata += chunk);
-            res.on("end", () => resolve(rawdata));
-        }).on("error", err => reject(err));
-    });
-};
-
-global.log = (...args) => {
-    console.log(new Date(), ...args);
-};
-
-global.millis = () => new Date().getTime();
 
 let nextID = "0";
 
@@ -63,6 +49,7 @@ const parseRequest = (rawjson, timearr) => {
     }
 
     log(`got ${stashes.length} stashes, download ${times[0]}s, json ${times[1]}s, parse ${times[2]}s`);
+    emit("reqdata", {times, numStashes: stashes.length, rateLimit, nextID});
 
     timerPromise
         .then(apiRequest)

@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+  </head>
+  <body ng-app="main" ng-controller="same">
+    <div>{{times}}</div>
+    <div>{{curStashes}} / {{totalStashes}}</div>
+    <div>{{nextID}}</div>
+    <div>rl: {{rateLimit}}</div>
+    <div ng-repeat="whoop in alerts">
+      <div>{{whoop.whisper}}</div>
+      <div>{{whoop.desc}}</div>
+    </div>
+  </body>
+</html>
+
