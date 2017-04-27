@@ -49,6 +49,7 @@ const parseRequest = (rawjson, timearr) => {
     for(let stash of stashes){
         parser.stash(stash);
     }
+
     timearr.push(millis());
 
     //calculate and log time
@@ -59,7 +60,7 @@ const parseRequest = (rawjson, timearr) => {
         times[i] = times[i].toFixed(2);
     }
 
-    log(`got ${stashes.length} stashes, download ${times[0]}s, json ${times[1]}s, parse ${times[2]}`);
+    log(`got ${stashes.length} stashes, download ${times[0]}s, json ${times[1]}s, parse ${times[2]}s`);
 
     timerPromise.then(apiRequest);
 };
