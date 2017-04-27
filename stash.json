@@ -1,0 +1,4301 @@
+{
+  "accountName": "clandestinehp",
+  "lastCharacterName": "FreaksOnALeash",
+  "id": "ed0eb4e3757fca08a532f3be42ed716b4796ad0653e83f6325f2b6648b0d9ed9",
+  "stash": "Misc",
+  "stashType": "PremiumStash",
+  "items": [
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "ilvl": 57,
+      "icon": "http://web.poecdn.com/gen/image/YTo1OntzOjEwOiJsZWFn/dWVOYW1lIjtzOjY6Ikxl/Z2FjeSI7czo5OiJhY2Nv/dW50SWQiO086MTg6Ikdy/aW5kYlxEYXRhYmFzZVxJ/ZCI6MTp7czoyOiJpZCI7/aTowO31pOjI7YTozOntz/OjE6ImYiO3M6MjU6IkFy/dC8yREl0ZW1zL0ZsYXNr/cy9zcHJpbnQiO3M6Mjoi/c3AiO2Q6MC42MDg1MTky/Njk3NzY4NzYzMTQ4MTQ3/Mjg2MzAxNTM2OTUxMjE0/MDc1MDg4NTAwOTc2NTYy/NTtzOjU6ImxldmVsIjtp/OjA7fWk6MTtpOjQ7aTow/O2k6OTt9/79e5503ce9/Item.png",
+      "league": "Legacy",
+      "id": "667706c6494cc76f1d31e7c72cdc9f1c9c7778d475ee253f0062ca744815f1f2",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Experimenter's Quicksilver Flask of Staunching",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 5 chaos",
+      "properties": [
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+11%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "Lasts %0 Seconds",
+          "values": [
+            [
+              "5.70",
+              1
+            ]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "Consumes %0 of %1 Charges on use",
+          "values": [
+            [
+              "20",
+              0
+            ],
+            [
+              "50",
+              0
+            ]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "Currently has %0 Charges",
+          "values": [
+            [
+              "0",
+              0
+            ]
+          ],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "16",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "utilityMods": [
+        "40% increased Movement Speed"
+      ],
+      "explicitMods": [
+        "Immunity to Bleeding during Flask effect\nRemoves Bleeding on use",
+        "32% increased Duration"
+      ],
+      "descrText": "Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.",
+      "frameType": 1,
+      "x": 5,
+      "y": 8,
+      "inventoryId": "Stash1",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 37,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "3558b8d28fbbf478667d480e8600b5e5f31a91fed83f6f108d1ae66c89132723",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Vivid Vessel",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "1% additional Chance to Block Spells while Dual Wielding",
+        "Minions have 8% increased maximum Life",
+        "10% increased Projectile Damage"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 11,
+      "y": 7,
+      "inventoryId": "Stash2",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Portal.png?scale=1&w=1&h=1&v=fd6ee627290a2740288252707d190b673",
+      "support": false,
+      "league": "Legacy",
+      "id": "0a4312d7e3c1154ad1b663360cb018737952db6b91786da5d5aafb4d6e3da5df",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Portal",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Spell",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "1 (Max)",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "0",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "2.50 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "10",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "secDescrText": "Creates a portal to the current area's town.",
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 7,
+      "y": 9,
+      "inventoryId": "Stash3",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 1,
+      "ilvl": 78,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Belts/Belt5.png?scale=1&w=2&h=1&v=5aa764352f06af8fd3231e6a52d710f53",
+      "league": "Legacy",
+      "id": "ca0b22beb2ab28750f42a6197b7b70d0c985165a0743b7321bc50663257cfb97",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Eagle Girdle",
+      "typeLine": "Heavy Belt",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 1 exa",
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "59",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "implicitMods": [
+        "+26 to Strength"
+      ],
+      "explicitMods": [
+        "+32 to Strength",
+        "+47 to maximum Energy Shield",
+        "+43% to Cold Resistance",
+        "+41% to Lightning Resistance"
+      ],
+      "craftedMods": [
+        "13% increased Elemental Damage with Weapons"
+      ],
+      "frameType": 2,
+      "x": 6,
+      "y": 7,
+      "inventoryId": "Stash4",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 2,
+      "ilvl": 75,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Weapons/OneHandWeapons/Claws/Claw8.png?scale=1&w=2&h=2&v=3e3a81e6e64ee3e493db6a417de6dc363",
+      "league": "Legacy",
+      "id": "e06ad3d653dc63a49a276a0a5f0c491815ee81ac23d7a03f1251ccd155b78c1b",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "D"
+        },
+        {
+          "group": 0,
+          "attr": "D"
+        },
+        {
+          "group": 0,
+          "attr": "S"
+        }
+      ],
+      "name": "<<set:MS>><<set:M>><<set:S>>Golem Hunger",
+      "typeLine": "Eagle Claw",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 400 chaos",
+      "properties": [
+        {
+          "name": "Claw",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "Physical Damage",
+          "values": [
+            [
+              "79-253",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 9
+        },
+        {
+          "name": "Critical Strike Chance",
+          "values": [
+            [
+              "7.74%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 12
+        },
+        {
+          "name": "Attacks per Second",
+          "values": [
+            [
+              "1.88",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 13
+        },
+        {
+          "name": "Weapon Range",
+          "values": [
+            [
+              "9",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 14
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "55",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "94",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "94",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "implicitMods": [
+        "2% of Physical Attack Damage Leeched as Life"
+      ],
+      "explicitMods": [
+        "152% increased Physical Damage",
+        "Adds 12 to 24 Physical Damage",
+        "25% increased Attack Speed",
+        "0.77% of Physical Attack Damage Leeched as Life"
+      ],
+      "craftedMods": [
+        "23% increased Critical Strike Chance"
+      ],
+      "cosmeticMods": [
+        "Has <<set:MS>><<set:M>><<set:S>>Bloodseeker Skin"
+      ],
+      "frameType": 2,
+      "x": 0,
+      "y": 9,
+      "inventoryId": "Stash5",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/DamageAgainstChilled.png?scale=1&w=1&h=1&v=0aa363f847b8d01e6edcc956e968362e3",
+      "support": true,
+      "league": "Legacy",
+      "id": "248cda6deb5988a95c267133e981a9e35dee7cf46831e4cb167b99ecbb703920",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Hypothermia Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 25 chaos",
+      "properties": [
+        {
+          "name": "Cold, Support",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Multiplier",
+          "values": [
+            [
+              "120%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "194332791/211508743",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.918793201447
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "108",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "38% more Damage against Chilled Enemies",
+        "30% increased Chill Duration on Enemies",
+        "10% chance to Freeze Enemies which are Chilled"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 5,
+      "y": 7,
+      "inventoryId": "Stash6",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 82,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Rings/AdamantineRing.png?scale=1&w=1&h=1&v=9b54f3319275b0209d0612d48b2df0593",
+      "league": "Legacy",
+      "id": "401de751d235625d6592a5d02555a149ecc5128adc93deb267545460179678e2",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Onslaught Loop",
+      "typeLine": "Steel Ring",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 100 chaos",
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "80",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "implicitMods": [
+        "Adds 4 to 14 Physical Damage to Attacks"
+      ],
+      "explicitMods": [
+        "Adds 10 to 17 Physical Damage to Attacks",
+        "5% increased Elemental Damage with Weapons",
+        "+54 to Strength",
+        "+38 to Intelligence",
+        "+71 to maximum Mana"
+      ],
+      "craftedMods": [
+        "+24% to Lightning Resistance"
+      ],
+      "frameType": 2,
+      "x": 0,
+      "y": 8,
+      "inventoryId": "Stash7",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 75,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "c8d9fab92799913eaae75c1fa8063f3e8c9fc58e49596ca34a7bba1274c8842b",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Maelström Shard",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 chaos",
+      "explicitMods": [
+        "6% increased maximum Energy Shield",
+        "+2 Energy Shield gained for each Enemy hit by your Attacks",
+        "7% increased Projectile Speed"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 9,
+      "y": 9,
+      "inventoryId": "Stash8",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 70,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicdex.png?scale=1&w=1&h=1&v=7375b3bb90a9809870b31d1aa4aa68b93",
+      "league": "Legacy",
+      "id": "b6138c4130446b141379b3016e9caec2e703e9b39620c7635dc428cf4ed72339",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Foe Essence",
+      "typeLine": "Viridian Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "9% increased Damage",
+        "16% increased Critical Strike Chance with Fire Skills",
+        "17% increased Evasion Rating"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 8,
+      "y": 2,
+      "inventoryId": "Stash9",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 55,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "a97b214df07e1c0b0a556b7f370d6a9263be1123b0565a15e6bf9b7869cc5dd6",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Dusk Solace",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "12% increased Totem Damage",
+        "+13% to Fire Resistance",
+        "12% increased Stun and Block Recovery"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 9,
+      "y": 2,
+      "inventoryId": "Stash10",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/CastOnDmgTaken.png?scale=1&w=1&h=1&v=e03ceb1a31e457dbfe30e968c76fb0d63",
+      "support": true,
+      "league": "Legacy",
+      "id": "932e8f1ef0f5f588950cf9a6140d4c050cb11e0572db8ab08e308240d1442365",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Cast when Damage Taken Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 20 chaos",
+      "properties": [
+        {
+          "name": "Support, Spell, Trigger",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "0.25 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "62059555/157405063",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.394266605377
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "69",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "69",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "48",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "This Gem can only Support Skill Gems requiring Level 69 or lower",
+        "2% more Damage",
+        "You cannot Cast Supported Triggerable Spells directly",
+        "Casts Supported Spells when you take a total of 3142 Damage"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 2,
+      "y": 6,
+      "inventoryId": "Stash11",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 55,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&duplicated=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "571da452eb69b02b869ec17dcad3702c5431b970f214e3e185680627ad62d978",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Dusk Solace",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "duplicated": true,
+      "explicitMods": [
+        "12% increased Totem Damage",
+        "+13% to Fire Resistance",
+        "12% increased Stun and Block Recovery"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 10,
+      "y": 2,
+      "inventoryId": "Stash12",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 55,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicdex.png?scale=1&duplicated=1&w=1&h=1&v=7375b3bb90a9809870b31d1aa4aa68b93",
+      "league": "Legacy",
+      "id": "89b11d2ee8a2635c82d03b1ebd912448b79f407b224567d7138cce2a8b35cf13",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Foe Ornament",
+      "typeLine": "Viridian Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 chaos",
+      "duplicated": true,
+      "explicitMods": [
+        "14% increased Mine Damage",
+        "10% increased Chaos Damage",
+        "11% increased Accuracy Rating"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 9,
+      "y": 1,
+      "inventoryId": "Stash13",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 71,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicstr.png?scale=1&w=1&h=1&v=5496129c557831c118a679c1001f3df93",
+      "league": "Legacy",
+      "id": "56c2aa70d93b8d8aa5ed0d1f5aff2e5cfde7584c7e0c385eee615286b4b31201",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Gladiator's Crimson Jewel of Archery",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 chaos",
+      "explicitMods": [
+        "14% increased Physical Weapon Damage while Dual Wielding",
+        "10% increased Projectile Damage"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 11,
+      "y": 0,
+      "inventoryId": "Stash14",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/FlameDash.png?scale=1&w=1&h=1&v=18c5cb1bdb06dd9eccd40701021008573",
+      "support": false,
+      "league": "Legacy",
+      "id": "002fb888a7cdf9592db0fd956d92b73d76e552363b58f2e1c8d7bd62a0f0decc",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Flame Dash",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Spell, Movement, Duration, Fire",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "30",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "3.00 sec (3 uses)",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "0.75 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Critical Strike Chance",
+          "values": [
+            [
+              "6.00%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "104895785/212051599",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.494671046734
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "151",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Teleport to a location, damaging enemies and leaving a trail of burning ground in your wake.",
+      "explicitMods": [
+        "Deals 285 to 428 Fire Damage",
+        "Base duration is 4.00 seconds",
+        "Deals 535.3 Fire Damage per second"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 1,
+      "y": 8,
+      "inventoryId": "Stash15",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 42,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicstr.png?scale=1&w=1&h=1&v=5496129c557831c118a679c1001f3df93",
+      "league": "Legacy",
+      "id": "c96426b9368e6859d9b1682bcea290e647dba49ab375f3b90f6371fea597141c",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Crimson Jewel",
+      "identified": false,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 1,
+      "y": 0,
+      "inventoryId": "Stash16",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 77,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicstr.png?scale=1&w=1&h=1&v=5496129c557831c118a679c1001f3df93",
+      "league": "Legacy",
+      "id": "fcdf72977e5436b5f0bba55b01533592090c04b77311a2dabb22607718ab964f",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Crimson Jewel",
+      "identified": false,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 0,
+      "y": 1,
+      "inventoryId": "Stash17",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 58,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicdex.png?scale=1&w=1&h=1&v=7375b3bb90a9809870b31d1aa4aa68b93",
+      "league": "Legacy",
+      "id": "0ba4c5f60ce15b79b9f77491c66cc9a3d2a60be6fa523a5b7b320776353be978",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Viridian Jewel",
+      "identified": false,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 0,
+      "y": 0,
+      "inventoryId": "Stash18",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 67,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicdex.png?scale=1&w=1&h=1&v=7375b3bb90a9809870b31d1aa4aa68b93",
+      "league": "Legacy",
+      "id": "51f7e7b209a10b4cb5df00fa42c0e50e99e0c1bd073d9934650123c445c182d3",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Viridian Jewel",
+      "identified": false,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 3,
+      "y": 1,
+      "inventoryId": "Stash19",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 49,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "10369a3eb42d66f5460fd6273b62cfb1a86401f6738e78b9c50b0b5fda346c2c",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Cobalt Jewel",
+      "identified": false,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 3,
+      "y": 0,
+      "inventoryId": "Stash20",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 42,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "943439fcda4fca790eca417a0d51ffc827eff86eb4cc25559414ddb3f73da052",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Cobalt Jewel",
+      "identified": false,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 2,
+      "y": 0,
+      "inventoryId": "Stash21",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 2,
+      "ilvl": 74,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Armours/Gloves/DoedresTenure.png?scale=1&w=2&h=2&v=edf8fd9f9f93ce0c4c55aacd83fe4b783",
+      "league": "Legacy",
+      "id": "0eb1f1dd277afa1a2b2e22780d993546499bf6594ad5d9f70c0517a29de978cb",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "I"
+        },
+        {
+          "group": 0,
+          "attr": "I"
+        }
+      ],
+      "name": "<<set:MS>><<set:M>><<set:S>>Doedre's Tenure",
+      "typeLine": "Velvet Gloves",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Energy Shield",
+          "values": [
+            [
+              "44",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 18
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "12",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "21",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "54% increased Spell Damage",
+        "+20 to Intelligence",
+        "15% reduced Cast Speed",
+        "+32 to maximum Energy Shield"
+      ],
+      "flavourText": [
+        "While Doedre lacked Maligaro's sense of style,\r",
+        "she surpassed her master in pure malevolence."
+      ],
+      "frameType": 3,
+      "x": 4,
+      "y": 0,
+      "inventoryId": "Stash22",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 84,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Rings/SapphireRuby.png?scale=1&w=1&h=1&v=ff4c9f8b5c539efd2e99a46303e849f63",
+      "league": "Legacy",
+      "id": "343c845ce8b95b8930b7a96c112a4061cb100aa8cae579468c4092150aafcccb",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Hypnotic Whorl",
+      "typeLine": "Two-Stone Ring",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 exa",
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "67",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "implicitMods": [
+        "+12% to Fire and Cold Resistances"
+      ],
+      "explicitMods": [
+        "+39 to Strength",
+        "Adds 11 to 16 Cold Damage to Attacks",
+        "+29 to maximum Energy Shield",
+        "+45% to Fire Resistance",
+        "+48% to Cold Resistance"
+      ],
+      "craftedMods": [
+        "Adds 4 to 9 Physical Damage to Attacks"
+      ],
+      "frameType": 2,
+      "x": 6,
+      "y": 8,
+      "inventoryId": "Stash23",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 2,
+      "ilvl": 78,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Armours/Shields/ShieldInt6.png?scale=1&w=2&h=2&v=c2c4daefcbef51dad8593cf61505a1933",
+      "league": "Legacy",
+      "id": "fe4649bb2e6418eff4404b3c3782a41b1a553c24a19ed685c85dde75ab099152",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "I"
+        },
+        {
+          "group": 0,
+          "attr": "I"
+        },
+        {
+          "group": 0,
+          "attr": "I"
+        }
+      ],
+      "name": "<<set:MS>><<set:M>><<set:S>>Hate Weaver",
+      "typeLine": "Titanium Spirit Shield",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 exa",
+      "properties": [
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "Chance to Block",
+          "values": [
+            [
+              "25%",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 15
+        },
+        {
+          "name": "Energy Shield",
+          "values": [
+            [
+              "469",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 18
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "159",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "+11 to Intelligence",
+        "111% increased Energy Shield",
+        "+119 to maximum Energy Shield",
+        "+38% to Cold Resistance",
+        "8% increased Stun and Block Recovery"
+      ],
+      "craftedMods": [
+        "+29% to Lightning Resistance"
+      ],
+      "cosmeticMods": [
+        "Has <<set:MS>><<set:M>><<set:S>>Rise of the Phoenix Skin"
+      ],
+      "frameType": 2,
+      "x": 1,
+      "y": 4,
+      "inventoryId": "Stash24",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 68,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicstr.png?scale=1&w=1&h=1&v=5496129c557831c118a679c1001f3df93",
+      "league": "Legacy",
+      "id": "5d38c4192eeba69fbc966ba6468dd562287aba76b274936a46cd73239eb8ffe0",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Carrion Desire",
+      "typeLine": "Crimson Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "1% additional Block Chance while Dual Wielding",
+        "16% increased Critical Strike Chance with Fire Skills",
+        "14% increased Freeze Duration on Enemies",
+        "10% increased Melee Damage",
+        "3% chance to Freeze"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 9,
+      "y": 8,
+      "inventoryId": "Stash25",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "ilvl": 72,
+      "icon": "http://web.poecdn.com/gen/image/YTo1OntzOjEwOiJsZWFn/dWVOYW1lIjtzOjY6Ikxl/Z2FjeSI7czo5OiJhY2Nv/dW50SWQiO086MTg6Ikdy/aW5kYlxEYXRhYmFzZVxJ/ZCI6MTp7czoyOiJpZCI7/aTowO31pOjI7YTozOntz/OjE6ImYiO3M6MzM6IkFy/dC8yREl0ZW1zL0ZsYXNr/cy9BdHppcmlzUHJvbWlz/ZSI7czoyOiJzcCI7ZDow/LjYwODUxOTI2OTc3Njg3/NjMxNDgxNDcyODYzMDE1/MzY5NTEyMTQwNzUwODg1/MDA5NzY1NjI1O3M6NToi/bGV2ZWwiO2k6MDt9aTox/O2k6NDtpOjA7aTo5O30,/e5180613c1/Item.png",
+      "league": "Legacy",
+      "id": "96fa6f2b7a3e4d1c2c3c27b09f5d411d5d97390dca324f0a83766f5a1cc4c824",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Atziri's Promise",
+      "typeLine": "Amethyst Flask",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 chaos",
+      "properties": [
+        {
+          "name": "Lasts %0 Seconds",
+          "values": [
+            [
+              "3.50",
+              0
+            ]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "Consumes %0 of %1 Charges on use",
+          "values": [
+            [
+              "30",
+              0
+            ],
+            [
+              "60",
+              0
+            ]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "Currently has %0 Charges",
+          "values": [
+            [
+              "0",
+              0
+            ]
+          ],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "utilityMods": [
+        "+35% to Chaos Resistance"
+      ],
+      "explicitMods": [
+        "2% of Chaos Damage Leeched as Life during Flask effect",
+        "Gain 24% of Physical Damage as Extra Chaos Damage during effect",
+        "Gain 15% of Elemental Damage as Extra Chaos Damage during effect"
+      ],
+      "descrText": "Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.",
+      "flavourText": [
+        "\"Death needs not your understanding. It needs only your loyalty.\" \r",
+        "- Atziri, Queen of the Vaal"
+      ],
+      "frameType": 3,
+      "x": 2,
+      "y": 7,
+      "inventoryId": "Stash26",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 72,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "6311b8edafd6220eb90a61c826d4f8e52d49ebdf5ee249019ff250b97a290c5e",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Pandemonium Bliss",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "+12 to Intelligence",
+        "+16% to Critical Strike Multiplier with Lightning Skills",
+        "4% reduced Mana Cost of Skills"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 10,
+      "y": 6,
+      "inventoryId": "Stash27",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 76,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "8c8ca72b0d8c1ca39c7d94af3b6571fcfbdeca4af158a90a1c21d89dd1a15512",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Shaman's Cobalt Jewel of the Beast",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 3 alt",
+      "explicitMods": [
+        "14% increased Totem Damage",
+        "+15% to Cold Resistance"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 11,
+      "y": 4,
+      "inventoryId": "Stash28",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Discipline.png?scale=1&w=1&h=1&v=0f0cb9dd5e43499dd6f851958e9808f23",
+      "support": false,
+      "league": "Legacy",
+      "id": "77b65f4b7237670f14ac88df7a09be0ff9d2029626d3952fa0415e393f7b9763",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Discipline",
+      "identified": true,
+      "corrupted": true,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Aura, Spell, AoE",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "20 (Max)",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Reserved",
+          "values": [
+            [
+              "35%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "1.20 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "1.20 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "70",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "155",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Casts an aura that grants energy shield to you and your allies.",
+      "explicitMods": [
+        "40% increased Area of Effect",
+        "You and nearby allies gain 303 additional Energy Shield"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 2,
+      "y": 1,
+      "inventoryId": "Stash29",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 71,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicdex.png?scale=1&w=1&h=1&v=7375b3bb90a9809870b31d1aa4aa68b93",
+      "league": "Legacy",
+      "id": "576f0fdc1dc4ec4e06b2ef5239bd5eeb76b716300040641ca8707848dd4a8fb4",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Damnation Mark",
+      "typeLine": "Viridian Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "10% increased Damage",
+        "16% increased Physical Damage with Bows",
+        "+1 Mana gained for each Enemy hit by your Attacks"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 10,
+      "y": 10,
+      "inventoryId": "Stash30",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 72,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicdex.png?scale=1&w=1&h=1&v=7375b3bb90a9809870b31d1aa4aa68b93",
+      "league": "Legacy",
+      "id": "78c0820cee351883316822add1c0abc7deacfad8784ef5137c92d364a2761e9f",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Flaming Viridian Jewel of Demolishing",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 chaos",
+      "explicitMods": [
+        "15% increased Fire Damage",
+        "+14% to Melee Critical Strike Multiplier"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 10,
+      "y": 0,
+      "inventoryId": "Stash31",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/ImmortalCall.png?scale=1&w=1&h=1&v=3843ced383e5dca18e076e57e9f678193",
+      "support": false,
+      "league": "Legacy",
+      "id": "326d50f59cd63918925d6eaead0b6d049ff92f6f755c3325180f5296e70d8c7d",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Immortal Call",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Spell, Duration",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "1",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "21",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "3.00 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "0.85 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+10%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "252595/252595",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 1
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "34",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "79",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "nextLevelRequirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "36",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "83",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Discharges Endurance Charges, making the character invulnerable to physical damage for a short time, proportional to how many endurance charges were expended.",
+      "explicitMods": [
+        "Base duration is 0.40 seconds",
+        "20% increased Cast Speed",
+        "100% increased Buff Duration per Endurance Charge"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 4,
+      "y": 6,
+      "inventoryId": "Stash32",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/AssassinsMark.png?scale=1&w=1&h=1&v=8c4b5e92ec890630d572e4f48d930ca23",
+      "support": false,
+      "league": "Legacy",
+      "id": "13a01c3e642e715fe92077d8ff07e7c582d79409eac2e3e614b9ff607b35aae5",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Assassin's Mark",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 20 chaos",
+      "properties": [
+        {
+          "name": "Curse, Spell, AoE, Duration",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "20 (Max)",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "50",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "0.50 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "70",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "98",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Curses all targets in an area, making them more vulnerable to Critical Strikes. Killing the cursed targets will grant life and mana, and a chance to gain a power charge.",
+      "explicitMods": [
+        "Base duration is 9.80 seconds",
+        "76% increased Area of Effect",
+        "Cursed enemies have a 40% chance to grant a Power Charge when slain",
+        "Cursed enemies take 20% increased extra damage from Critical Strikes",
+        "Cursed enemies have an additional 9% chance to receive a Critical Strike",
+        "Cursed enemies grant 25 Life when Killed",
+        "Cursed enemies grant 25 Mana when Killed"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 1,
+      "y": 11,
+      "inventoryId": "Stash33",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/CurseOnHit.png?scale=1&w=1&h=1&v=05db155f8ee3abfd38be282240134f573",
+      "support": true,
+      "league": "Legacy",
+      "id": "3b02caee55b8593413f9d06ab3812ce37d36954dfaa6c78d3af50c2197892f35",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Curse On Hit Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 22 chaos",
+      "properties": [
+        {
+          "name": "Curse, Trigger, Support",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "20 (Max)",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "70",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "111",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "12% reduced Curse Duration",
+        "Supported Skills apply supported Curses on Hit",
+        "You cannot Cast Supported Curses",
+        "10% increased Effect of Supported Curses"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 4,
+      "y": 9,
+      "inventoryId": "Stash34",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 2,
+      "h": 2,
+      "ilvl": 84,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Armours/Helmets/HelmetInt11.png?scale=1&w=2&h=2&v=e785517985bfa266e348519edfc144853",
+      "league": "Legacy",
+      "id": "2396cf6512a2d75ad1f0f4acca21c0ce94a3b46a7ae8a33651d5d7be2bdde973",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "S"
+        },
+        {
+          "group": 0,
+          "attr": "D"
+        },
+        {
+          "group": 0,
+          "attr": "I"
+        },
+        {
+          "group": 0,
+          "attr": "I"
+        }
+      ],
+      "name": "<<set:MS>><<set:M>><<set:S>>Dusk Veil",
+      "typeLine": "Hubris Circlet",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 300 chaos",
+      "properties": [
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "Energy Shield",
+          "values": [
+            [
+              "348",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 18
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "69",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "154",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "+25 to Intelligence",
+        "168% increased Energy Shield",
+        "+38% to Fire Resistance",
+        "14% increased Stun and Block Recovery"
+      ],
+      "craftedMods": [
+        "+21 to maximum Energy Shield"
+      ],
+      "enchantMods": [
+        "40% increased Frost Blades Damage"
+      ],
+      "frameType": 2,
+      "x": 0,
+      "y": 6,
+      "inventoryId": "Stash35",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 73,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "324618b0986f6ecfb5789e81c10b5e01a6b9a4f8fe86b2b36862d1a6404e4754",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Maelström Lens",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 20 chaos",
+      "explicitMods": [
+        "+15% to Critical Strike Multiplier with Elemental Skills",
+        "8% increased maximum Energy Shield",
+        "4% faster start of Energy Shield Recharge",
+        "+12% to Cold and Lightning Resistances"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 7,
+      "y": 5,
+      "inventoryId": "Stash36",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 84,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "a92ccef7c53d01fc798a8adb42060a3519e6b081130187c195ebca74c70d688e",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Bramble Splinter",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 15 chaos",
+      "explicitMods": [
+        "3% increased Cast Speed with Lightning Skills",
+        "8% increased maximum Energy Shield",
+        "12% increased Projectile Damage"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 6,
+      "y": 6,
+      "inventoryId": "Stash37",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 53,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicdex.png?scale=1&w=1&h=1&v=7375b3bb90a9809870b31d1aa4aa68b93",
+      "league": "Legacy",
+      "id": "54295aac02760969ff463ad22fc4ca744048148e1713742a9d43c6704d9fbc16",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Humming Viridian Jewel of Combat",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 1 chaos",
+      "explicitMods": [
+        "16% increased Lightning Damage",
+        "11% increased Melee Damage"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 9,
+      "y": 0,
+      "inventoryId": "Stash38",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 2,
+      "ilvl": 80,
+      "icon": "http://web.poecdn.com/gen/image/YTo1OntzOjEwOiJsZWFn/dWVOYW1lIjtzOjY6Ikxl/Z2FjeSI7czo5OiJhY2Nv/dW50SWQiO086MTg6Ikdy/aW5kYlxEYXRhYmFzZVxJ/ZCI6MTp7czoyOiJpZCI7/aTowO31pOjI7YTozOntz/OjE6ImYiO3M6MjU6IkFy/dC8yREl0ZW1zL0ZsYXNr/cy9zaWx2ZXIiO3M6Mjoi/c3AiO2Q6MC42MDg1MTky/Njk3NzY4NzYzMTQ4MTQ3/Mjg2MzAxNTM2OTUxMjE0/MDc1MDg4NTAwOTc2NTYy/NTtzOjU6ImxldmVsIjtp/OjA7fWk6MTtpOjQ7aTow/O2k6OTt9/d66ad96d68/Item.png",
+      "league": "Legacy",
+      "id": "f22deb316c00e6499787327263b3c985f5f47939a748e294145ed427dc4e6ffa",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Chemist's Silver Flask of Steadiness",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 10 chaos",
+      "properties": [
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        },
+        {
+          "name": "Lasts %0 Seconds",
+          "values": [
+            [
+              "6.00",
+              1
+            ]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "Consumes %0 of %1 Charges on use",
+          "values": [
+            [
+              "31",
+              1
+            ],
+            [
+              "60",
+              0
+            ]
+          ],
+          "displayMode": 3
+        },
+        {
+          "name": "Currently has %0 Charges",
+          "values": [
+            [
+              "0",
+              0
+            ]
+          ],
+          "displayMode": 3
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "22",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "utilityMods": [
+        "Onslaught"
+      ],
+      "explicitMods": [
+        "22% reduced Charges used",
+        "43% increased Block and Stun Recovery during Flask effect"
+      ],
+      "descrText": "Right click to drink. Can only hold charges while in belt. Refills as you kill monsters.",
+      "frameType": 1,
+      "x": 5,
+      "y": 10,
+      "inventoryId": "Stash39",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/IceStrike.png?scale=1&w=1&h=1&v=c661e1530e434b6c6fbf73a33d3b83a53",
+      "support": false,
+      "league": "Legacy",
+      "id": "7df91973d270db18372adde3680b84f2a409a4fd2be651e5a072fc9e63c3d58d",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Frost Blades",
+      "identified": true,
+      "corrupted": true,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Projectile, Attack, Melee, Cold",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "20 (Max)",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "6",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "70",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "155",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Attack with increased range, releasing icy blades from the struck enemy that fly at other enemies. Requires a Melee Weapon.",
+      "explicitMods": [
+        "7 additional Projectiles",
+        "Deals 141.8% of Base Attack Damage",
+        "20% increased Projectile Damage",
+        "19% increased Projectile Speed",
+        "60% of Physical Damage converted to Cold Damage",
+        "+21 to Melee Weapon Range"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 4,
+      "y": 8,
+      "inventoryId": "Stash40",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 76,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "2aa71d8770b38003d35a2bdbef376146efc07794b44485caaaa50e02ff8572cc",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Entropy Drop",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 2 chaos",
+      "explicitMods": [
+        "10% increased Spell Damage",
+        "9% increased Totem Life",
+        "3% increased Attack and Cast Speed"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 11,
+      "y": 6,
+      "inventoryId": "Stash41",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 80,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicstr.png?scale=1&w=1&h=1&v=5496129c557831c118a679c1001f3df93",
+      "league": "Legacy",
+      "id": "183b42c18575022c5f39023842e8ab840c5fd189519419319480a10f327b50d8",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Cataclysm Essence",
+      "typeLine": "Crimson Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "8% increased Attack Speed with Staves",
+        "14% increased Critical Strike Chance with Two Handed Melee Weapons",
+        "+12% to Fire and Cold Resistances"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 9,
+      "y": 7,
+      "inventoryId": "Stash42",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 50,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "5c4c09d61c9920239769ade0eaa6942f75e85c6ee15d9244f1e0637b20353039",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Gale Cut",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 20 chaos",
+      "explicitMods": [
+        "14% increased Fire Damage",
+        "3% increased Cast Speed",
+        "18% increased Critical Strike Chance with Fire Skills"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 10,
+      "y": 11,
+      "inventoryId": "Stash43",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 50,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "ca9a1c74102c31023296efd0d81538b84443cffa8760e87dfd4e6b1eb022dfaf",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Behemoth Solace",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "16% increased Lightning Damage",
+        "14% increased Critical Strike Chance for Spells",
+        "7% increased maximum Energy Shield"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 11,
+      "y": 10,
+      "inventoryId": "Stash44",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Hatred.png?scale=1&w=1&h=1&v=37205cdc1ceb1f70b66d9ca6b6e7ad4c3",
+      "support": false,
+      "league": "Legacy",
+      "id": "9db2ad0b9b490e43f665442ff773303add5119e763ff3a6b10a6f7a9e64c45be",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Hatred",
+      "identified": true,
+      "corrupted": true,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Aura, Spell, AoE, Cold",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "20 (Max)",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Reserved",
+          "values": [
+            [
+              "50%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "1.20 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "1.20 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+8%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "70",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "98",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Casts an aura that increases the cold damage of you and your allies.",
+      "explicitMods": [
+        "48% increased Area of Effect",
+        "You and nearby allies gain 36% of Physical Damage as Extra Cold Damage"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 1,
+      "y": 2,
+      "inventoryId": "Stash45",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 80,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "d3df848da88b3c7a6efbf10277ec335da832fc94657b980ca865c422d94ff1db",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Cryomantic Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "3% increased Cast Speed with Cold Skills"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 10,
+      "y": 7,
+      "inventoryId": "Stash46",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/IncreasedPhysicalDamage.png?scale=1&w=1&h=1&v=217781293d9d65ecc9e283feacadd2323",
+      "support": true,
+      "league": "Legacy",
+      "id": "3bff4775c087664a0b98c5f5d2dff40a44f520591919fb2465a8d4964dfa8ccd",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Melee Physical Damage Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 20 chaos",
+      "properties": [
+        {
+          "name": "Melee, Support, Attack",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Multiplier",
+          "values": [
+            [
+              "140%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "158544301/212002638",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.747841179371
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "108",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "10% increased Melee Physical Damage",
+        "Supported Melee Skills deal 48% more Melee Physical Damage"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 3,
+      "y": 7,
+      "inventoryId": "Stash47",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 69,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "5e8f6cf0ee2c931f931710cdf5040730725067849e8a270c26560c21bed0bc42",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Loath Lens",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "1% additional Block Chance while Dual Wielding",
+        "6% increased maximum Energy Shield",
+        "6% increased Projectile Speed"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 10,
+      "y": 9,
+      "inventoryId": "Stash48",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 83,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicstr.png?scale=1&w=1&h=1&v=5496129c557831c118a679c1001f3df93",
+      "league": "Legacy",
+      "id": "e96cc5eba2d8622112b891947bc691f84c9d7e75193a3382f9a9526419ea9615",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Dusk Vessel",
+      "typeLine": "Crimson Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 20 chaos",
+      "explicitMods": [
+        "14% increased Fire Damage",
+        "6% increased Attack Speed with Two Handed Melee Weapons",
+        "3% reduced Mana Cost of Skills",
+        "+10% to Fire and Lightning Resistances"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 8,
+      "y": 5,
+      "inventoryId": "Stash49",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/FortifyGem.png?scale=1&w=1&h=1&v=6a69853aaf7278667bde43531541ef7d3",
+      "support": true,
+      "league": "Legacy",
+      "id": "124d4a9e9c349ac21353df1198a281d55ed9fb22e7a94db7fa2a96ef9a200c61",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Fortify Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Attack, Support, Melee",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "18",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Multiplier",
+          "values": [
+            [
+              "110%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "29704518/62460771",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.475570768118
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "66",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "105",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "42% increased Melee Physical Damage",
+        "Grants Fortify on Melee hit",
+        "25% increased Fortify duration"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 0,
+      "y": 4,
+      "inventoryId": "Stash50",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 74,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "abd677dac07a4c2371fa5ca3eb725d04e135c5a748421e9ef1775130944de83f",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Gale Spark",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 10 chaos",
+      "explicitMods": [
+        "11% increased Spell Damage",
+        "+18% to Critical Strike Multiplier with Fire Skills",
+        "5% faster start of Energy Shield Recharge",
+        "+9% to all Elemental Resistances"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 6,
+      "y": 5,
+      "inventoryId": "Stash51",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 77,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "a63ddb914988f3236700141ea6c76faf1bd3f00f1b4e872e48c8cdb59a41ba07",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Entropy Solace",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "5% increased Cast Speed while holding a Shield",
+        "16% increased Critical Strike Chance with Lightning Skills",
+        "3% reduced Mana Cost of Skills"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 11,
+      "y": 11,
+      "inventoryId": "Stash52",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 68,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "b1d59a4aea6f24fc00ffea2d21c27db67e91d8af59c3ed35b0ede0cbfe489a5a",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Apocalypse Solace",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "12% increased Damage over Time",
+        "10% increased Spell Damage",
+        "4% increased Cast Speed with Fire Skills",
+        "+15% to Critical Strike Multiplier with Cold Skills"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 2,
+      "x": 11,
+      "y": 9,
+      "inventoryId": "Stash53",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 81,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Amulets/AgateAmulet.png?scale=1&w=1&h=1&v=616cdaa894e5fcb0684cbeab3f90c4bc3",
+      "league": "Legacy",
+      "id": "efbd22c377699c156bec2b06ee8f64c01ba4cbf7f95f0a3d53611c6d69efd3b4",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Foe Gorget",
+      "typeLine": "Agate Amulet",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 1 exa",
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "60",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "implicitMods": [
+        "+24 to Strength and Intelligence"
+      ],
+      "explicitMods": [
+        "Adds 14 to 26 Physical Damage to Attacks",
+        "+18 to Strength",
+        "+25 to all Attributes",
+        "+42% to Fire Resistance"
+      ],
+      "craftedMods": [
+        "Adds 11 to 17 Cold Damage to Attacks"
+      ],
+      "frameType": 2,
+      "x": 0,
+      "y": 5,
+      "inventoryId": "Stash54",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/FasterCast.png?scale=1&w=1&h=1&v=f70e30cd3755d11a81103b70957e579c3",
+      "support": true,
+      "league": "Legacy",
+      "id": "39e1b322a43f15039d24be95719dcb3c406f6f698420c78963af6050ef62221b",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Faster Casting Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Support, Spell",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "17",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Multiplier",
+          "values": [
+            [
+              "120%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "17564915/26260555",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.668870687485
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "64",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "102",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "46% increased Cast Speed"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 1,
+      "y": 3,
+      "inventoryId": "Stash55",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/SlamTotemGem.png?scale=1&w=1&h=1&v=b448e4e3f9bef63a190b916cae29f7a53",
+      "support": false,
+      "league": "Legacy",
+      "id": "4d5b0f1612ae67198d90467d8560de20f889f24d8fe2a2dc09e3b29418d13656",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Ancestral Warchief",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Totem, Attack, Duration, AoE, Melee",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "12",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "10",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "403020/1956648",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.205974712968
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "54",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "121",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Summons an Ancestor Totem that will attack enemies with a powerful main hand slam while you stand close to it. Being near it grants you more melee damage.",
+      "explicitMods": [
+        "Totem lasts 12 seconds",
+        "Deals 113.2% of Base Attack Damage",
+        "Summons a Totem which uses this Skill",
+        "14% more Melee Damage while Totem is Active",
+        "10% less Attack Speed",
+        "50% increased Totem Placement speed",
+        "Attacks with +10 to Melee range"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 0,
+      "y": 11,
+      "inventoryId": "Stash56",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/WeaponElementalDamage.png?scale=1&w=1&h=1&v=d4747417db3cc97e4cefa260fa65557f3",
+      "support": true,
+      "league": "Legacy",
+      "id": "caa892682593c34d0455f21e80dc60e956de517db2076c55b6ebe2d97b219808",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Weapon Elemental Damage Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 28 chaos",
+      "properties": [
+        {
+          "name": "Attack, Support",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "17",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Multiplier",
+          "values": [
+            [
+              "140%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "17564915/26260555",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.668870687485
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "64",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "64",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "44",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "10% increased Elemental Damage with Weapons",
+        "Supported Skills deal 56% more Weapon Elemental Damage"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 3,
+      "y": 6,
+      "inventoryId": "Stash57",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 1,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/unique12.png?scale=1&w=1&h=1&v=dff7876369a4b22b33affd3219adf5373",
+      "league": "Legacy",
+      "id": "e8db9794b41002d361b09710f6e0d4111c26105655f64ba292feb4f3ab58ac33",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Survival Secrets",
+      "typeLine": "Cobalt Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Limited to",
+          "values": [
+            [
+              "1",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "explicitMods": [
+        "3 Mana Regenerated per second",
+        "10% increased Elemental Damage"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "flavourText": [
+        "Nature provides its own solutions."
+      ],
+      "frameType": 3,
+      "x": 7,
+      "y": 0,
+      "inventoryId": "Stash58",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/HeraldofIce.png?scale=1&w=1&h=1&v=098e32bf010edc365f1ec453f3477bc73",
+      "support": false,
+      "league": "Legacy",
+      "id": "7405324e6e273f372cd8332ed92be5b009fdf11b07a1b69f1e1c625abe6c6970",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Herald of Ice",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 25 chaos",
+      "properties": [
+        {
+          "name": "Cast, AoE, Cold",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "17",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Reserved",
+          "values": [
+            [
+              "25%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "1.00 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "1.00 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Damage Effectiveness",
+          "values": [
+            [
+              "80%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "17564915/26272845",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.668557822704
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "64",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "90",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "62",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Channel ice through your hands, adding cold damage to spells and attacks. If you shatter an enemy, they explode and deal AoE cold damage to enemies near them.",
+      "explicitMods": [
+        "Deals 235 to 352 Cold Damage",
+        "Damage cannot be Reflected",
+        "Adds 30 to 46 Cold Damage to Attacks",
+        "Adds 30 to 46 Cold Damage to Spells",
+        "15% increased Cold Damage"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 3,
+      "y": 9,
+      "inventoryId": "Stash59",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 71,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/BurningArrowThreshold.png?scale=1&w=1&h=1&v=875b3b892fb0a8b52922d8f8ab6390c73",
+      "league": "Legacy",
+      "id": "03a095905dfcde8a0b95d56a316969e61537069115119386976bf0220dc65364",
+      "sockets": [],
+      "name": "<<set:MS>><<set:M>><<set:S>>Sudden Ignition",
+      "typeLine": "Viridian Jewel",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Limited to",
+          "values": [
+            [
+              "1",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Radius",
+          "values": [
+            [
+              "Medium",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "explicitMods": [
+        "14% increased Fire Damage",
+        "With at least 40 Dexterity in Radius, Burning\nArrow can inflict an additional Ignite on an Enemy"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "flavourText": [
+        "After years of subterfuge, sabotage, and sacrifice,\r",
+        "Sarn had become a powder keg just waiting to explode.\r",
+        "Finally, Victario lit the match."
+      ],
+      "frameType": 3,
+      "x": 8,
+      "y": 0,
+      "inventoryId": "Stash60",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 3,
+      "ilvl": 70,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Weapons/OneHandWeapons/Wands/LifeSprig.png?scale=1&w=1&h=3&v=880d7682adb3ff4578306f526644abd73",
+      "league": "Legacy",
+      "id": "e8f799aebdd13031448ef57292f405d43225add52d935c66404f198665c879ef",
+      "sockets": [
+        {
+          "group": 0,
+          "attr": "D"
+        },
+        {
+          "group": 1,
+          "attr": "I"
+        }
+      ],
+      "name": "<<set:MS>><<set:M>><<set:S>>Lifesprig",
+      "typeLine": "Driftwood Wand",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Wand",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Physical Damage",
+          "values": [
+            [
+              "4-8",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 9
+        },
+        {
+          "name": "Critical Strike Chance",
+          "values": [
+            [
+              "7.00%",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 12
+        },
+        {
+          "name": "Attacks per Second",
+          "values": [
+            [
+              "1.40",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 13
+        }
+      ],
+      "implicitMods": [
+        "11% increased Spell Damage"
+      ],
+      "explicitMods": [
+        "+1 to Level of Socketed Spell Gems",
+        "21% increased Spell Damage",
+        "5% increased Cast Speed",
+        "+16 to maximum Life",
+        "+19 to maximum Mana",
+        "Regenerate 6 Life over 1 second when you Cast a Spell"
+      ],
+      "flavourText": [
+        "From the smallest seeds\r",
+        "To the tallest redwoods,\r",
+        "Life endures in Wraeclast."
+      ],
+      "frameType": 3,
+      "x": 6,
+      "y": 0,
+      "inventoryId": "Stash61",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 68,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicint.png?scale=1&w=1&h=1&v=cd579ea22c05f1c6ad2fd015d7a710bd3",
+      "league": "Legacy",
+      "id": "1c5962fb3af828fae46db632611138ba28b1bd30d7203ae8742650b890aa735a",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Humming Cobalt Jewel of Enchanting",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "14% increased Lightning Damage",
+        "3% increased Cast Speed"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 11,
+      "y": 8,
+      "inventoryId": "Stash62",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/WhirlingBlades.png?scale=1&w=1&h=1&v=e45604e808bc98f512fd4818265cdd7a3",
+      "support": false,
+      "league": "Legacy",
+      "id": "b6a542018886e6181c17868019a296e798a24ea134859d8946f86bce0b5dda0e",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Whirling Blades",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Attack, Movement, Melee",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "15",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+7%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "186694773/212051599",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.88042140007
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "95",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "66",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Dive through enemies, dealing weapon damage. Only works with daggers, claws and one handed swords.",
+      "explicitMods": [
+        "Deals 98% of Base Attack Damage",
+        "3% increased Attack Speed"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 0,
+      "y": 3,
+      "inventoryId": "Stash63",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/TempestShield.png?scale=1&w=1&h=1&v=d8d34090b1ed5028a29f130836c7da0e3",
+      "support": false,
+      "league": "Legacy",
+      "id": "21b799ca6f925f66a303195846083c8d57da63749e8cb4720e48d8c115bcb78a",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Tempest Shield",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "note": "~b/o 1 chaos",
+      "properties": [
+        {
+          "name": "Spell, Lightning, Chaining, Duration",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "21",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "0.50 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Critical Strike Chance",
+          "values": [
+            [
+              "6.00%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Damage Effectiveness",
+          "values": [
+            [
+              "60%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "112841893/212023122",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.532215058804
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "66",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "95",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Enchants your shield with the power of storms, which lashes out to deal arcing lightning damage to attackers when you block them. Blocking refreshes the duration of Tempest Shield.",
+      "explicitMods": [
+        "Deals 264 to 396 Lightning Damage",
+        "Base duration is 12.00 seconds",
+        "Chain +1 Times",
+        "Additional 3% Shield Block Chance"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 5,
+      "y": 6,
+      "inventoryId": "Stash64",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/IceElementalSummon.png?scale=1&w=1&h=1&v=1b52528f1e7cc3eee5ec2e26e661fc2f3",
+      "support": false,
+      "league": "Legacy",
+      "id": "d623ca06fa239086fcdc955f018527a6ef2f014ea93f358bfbf1fc80451636d1",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Summon Ice Golem",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Cold, Minion, Spell, Golem",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "54",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "6.00 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "1.00 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "53117278/157972052",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.336244791746
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "69",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "96",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "67",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Summons an Ice Golem that grants you increased Critical Strike Chance and Accuracy. The Ice Golem can use an icy barrage spell and a chilling spinning dash in addition to its melee attack.",
+      "explicitMods": [
+        "Can Summon up to 1 Golem at a time",
+        "20% increased Minion Damage",
+        "86% increased Minion Maximum Life",
+        "Golems Grant 29% increased Critical Strike Chance",
+        "Golems Grant 29% increased Accuracy"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 1,
+      "y": 1,
+      "inventoryId": "Stash65",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/multipleattacks.png?scale=1&w=1&h=1&v=db892c23b93cda5f0a6cd5d4ffad68073",
+      "support": true,
+      "league": "Legacy",
+      "id": "0119860dca32dae6fd141271ba10a7650162d700d45bce4783ea93345f55ebb3",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Multistrike Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Attack, Melee, Support",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "13",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Multiplier",
+          "values": [
+            [
+              "180%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Quality",
+          "values": [
+            [
+              "+20%",
+              1
+            ]
+          ],
+          "displayMode": 0,
+          "type": 6
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "3795750/4231667",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.896986961365
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "62",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Str",
+          "values": [
+            [
+              "62",
+              0
+            ]
+          ],
+          "displayMode": 1
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "43",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "10% increased Melee Physical Damage",
+        "Supported Melee Attacks Repeat 2 additional times",
+        "87% more Melee Attack Speed",
+        "30% less Attack Damage"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 3,
+      "y": 8,
+      "inventoryId": "Stash66",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 69,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Jewels/basicstr.png?scale=1&w=1&h=1&v=5496129c557831c118a679c1001f3df93",
+      "league": "Legacy",
+      "id": "3c08a8018ed6d633c690bfca577e54fe0ba78e9b34a698cec92cb00e026b5fec",
+      "sockets": [],
+      "name": "",
+      "typeLine": "<<set:MS>><<set:M>><<set:S>>Parrying Crimson Jewel of Cunning",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "explicitMods": [
+        "1% additional Block Chance while Dual Wielding",
+        "+9 to Dexterity and Intelligence"
+      ],
+      "descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+      "frameType": 1,
+      "x": 10,
+      "y": 8,
+      "inventoryId": "Stash67",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/Support/FasterAttacks.png?scale=1&w=1&h=1&v=c14203f7b19650861907a30a92e3b6fe3",
+      "support": true,
+      "league": "Legacy",
+      "id": "77e28ba7d6218f0e3ad50e26eb1d9f632401a8193c859b461d696ceba12bf181",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Faster Attacks Support",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Attack, Support",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "19",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Multiplier",
+          "values": [
+            [
+              "115%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "156261552/212002638",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 0.737073600292
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "68",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Dex",
+          "values": [
+            [
+              "108",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "explicitMods": [
+        "43% increased Attack Speed"
+      ],
+      "descrText": "This is a Support Gem. It does not grant a bonus to your character, but to skills in sockets connected to it. Place into an item socket connected to a socket containing the Active Skill Gem you wish to augment. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 0,
+      "y": 2,
+      "inventoryId": "Stash68",
+      "socketedItems": []
+    },
+    {
+      "verified": false,
+      "w": 1,
+      "h": 1,
+      "ilvl": 0,
+      "icon": "http://web.poecdn.com/image/Art/2DItems/Gems/FrostBomb.png?scale=1&w=1&h=1&v=ae1d10d03ef34f5d32eaaeb057681fd73",
+      "support": false,
+      "league": "Legacy",
+      "id": "4eeee9b120a559d95dfe7c68a1814110a7179b6ae807345995c8db1769541bab",
+      "sockets": [],
+      "name": "",
+      "typeLine": "Frost Bomb",
+      "identified": true,
+      "corrupted": false,
+      "lockedToCharacter": false,
+      "properties": [
+        {
+          "name": "Spell, AoE, Duration, Cold",
+          "values": [],
+          "displayMode": 0
+        },
+        {
+          "name": "Level",
+          "values": [
+            [
+              "8",
+              0
+            ]
+          ],
+          "displayMode": 0,
+          "type": 5
+        },
+        {
+          "name": "Mana Cost",
+          "values": [
+            [
+              "13",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cooldown Time",
+          "values": [
+            [
+              "2.50 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Cast Time",
+          "values": [
+            [
+              "0.50 sec",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Critical Strike Chance",
+          "values": [
+            [
+              "6.00%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Damage Effectiveness",
+          "values": [
+            [
+              "130%",
+              0
+            ]
+          ],
+          "displayMode": 0
+        }
+      ],
+      "additionalProperties": [
+        {
+          "name": "Experience",
+          "values": [
+            [
+              "283759/283759",
+              0
+            ]
+          ],
+          "displayMode": 2,
+          "progress": 1
+        }
+      ],
+      "requirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "28",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "67",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "nextLevelRequirements": [
+        {
+          "name": "Level",
+          "values": [
+            [
+              "32",
+              0
+            ]
+          ],
+          "displayMode": 0
+        },
+        {
+          "name": "Int",
+          "values": [
+            [
+              "75",
+              0
+            ]
+          ],
+          "displayMode": 1
+        }
+      ],
+      "secDescrText": "Creates a crystal that pulses with cold for a duration. Each pulse applies a debuff to nearby enemies that reduces their cold resistance and life regeneration. When its duration ends, the crystal explodes, dealing heavy cold damage to enemies around it.",
+      "explicitMods": [
+        "Deals 59 to 89 Cold Damage",
+        "Base duration is 3.50 seconds",
+        "Base secondary duration is 2.00 seconds",
+        "-20% to Cold Resistance",
+        "75% reduced Life Regeneration rate"
+      ],
+      "descrText": "Place into an item socket of the right colour to gain this skill. Right click to remove from a socket.",
+      "frameType": 4,
+      "x": 2,
+      "y": 3,
+      "inventoryId": "Stash69",
+      "socketedItems": []
+    }
+  ],
+  "public": true
+}

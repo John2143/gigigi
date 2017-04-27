@@ -1,6 +1,7 @@
-const data = require("./data.js");
+import {currencyAbbrList} from "./data.js";
+import {cache} from "./decorators.js";
 
-module.exports = class PriceTag{
+export default class PriceTag{
     constructor(note, stashnote, isweak){
         if(isweak){
             this.weakTag(note, stashnote);
@@ -17,12 +18,12 @@ module.exports = class PriceTag{
 
     setUnpriced(){
         this.priced = false;
-        this._string = "(unpriced)";
+        this.string = "(unpriced)";
     }
 
     static noteSplitter(note){
         // ~b/o 6 chaos
-        let parts = /[^/\d](\d+) (.+)$/g.exec(note);
+        let parts = /[^/\d.](\d+) (.+)$/g.exec(note);
         if(parts) return {
             amount: Number(parts[1]),
             amountStr: parts[1],
@@ -44,13 +45,12 @@ module.exports = class PriceTag{
             amountStr: parts[1],
             type: parts[2]
         };
-        console.log("b");
 
         return null;
     }
 
     static currencyFromAbbr(abbr){
-        for(let currency of data.currMap){
+        for(let currency of currencyAbbrList){
             for(let item of currency[1]){
                 if(item === abbr){
                     return currency;
@@ -97,16 +97,15 @@ module.exports = class PriceTag{
                 .replace("orb of ", "")
                 .replace(" orb", "");
             this.type = type;
-            this._string = null;
+            this.string = null;
         }else{
             this.setUnpriced();
         }
     }
 
-    get string(){
-        if(this._string) return this._string;
+    @cache get string(){
         if(!this.priced) return "(unpriced)";
-        return this._string = `${this.amountStr} ${this.currencyshort}`;
+        return `${this.amountStr} ${this.currencyshort}`;
     }
 
     //a weak tag doesnt have much info on it
@@ -114,7 +113,7 @@ module.exports = class PriceTag{
         this.isweak = true;
         this.amount = amount;
         this.currencyshort = currency;
-        this._string = amount + " " + currency;
+        this.string = amount + " " + currency;
     }
 
     //return true if this is cheaper than other

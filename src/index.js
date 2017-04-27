@@ -1,7 +1,10 @@
-let http = require("http");
-let https = require("https");
-let fs = require("fs");
-let parser = require("./parser.js");
+import http from "http";
+import https from "https";
+global.fs = require("fs");
+import {parseStash} from "./parser.js";
+
+const rateLimit = 2500;
+const savePath = "./save.id";
 
 global.GET = url => {
     return new Promise((resolve, reject) => {
@@ -19,13 +22,11 @@ global.log = (...args) => {
 
 global.millis = () => new Date().getTime();
 
-const rateLimit = 5000;
-
 let nextID = "0";
 
 let timerPromise;
 const newTimerPromise = time => {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, _reject) => {
         setTimeout(resolve, time);
     });
 };
@@ -43,11 +44,12 @@ const parseRequest = (rawjson, timearr) => {
     }
 
     nextID = json.next_change_id;
+    fs.writeFileSync(savePath, nextID);
 
     let stashes = json.stashes;
 
     for(let stash of stashes){
-        parser.stash(stash);
+        parseStash(stash);
     }
 
     timearr.push(millis());
@@ -62,7 +64,11 @@ const parseRequest = (rawjson, timearr) => {
 
     log(`got ${stashes.length} stashes, download ${times[0]}s, json ${times[1]}s, parse ${times[2]}s`);
 
-    timerPromise.then(apiRequest);
+    timerPromise
+        .then(apiRequest)
+        .catch(err => {
+            log("Unhandled Exception, continuing anyway", err);
+        });
 };
 
 apiRequest = async () => {
@@ -75,12 +81,22 @@ apiRequest = async () => {
     parseRequest(rawjson, timearr);
 };
 
-GET("http://poe.ninja/api/Data/GetStats")
-    .then(stats => {
-        let key = JSON.parse(stats);
-        if(!key) throw "couldnt find key on poe.ninja";
-        nextID = key.nextChangeId;
-        log("got key from poe.ninja, ", nextID);
-    })
-    .then(apiRequest)
-    .catch(err => log("Failed to start:", err));
+fs.readFile(savePath, "utf-8", (err, dat) => {
+    let stat;
+    try{stat = fs.statSync(savePath);}catch(e){err = true;}
+    if(err || (new Date() - stat.mtime)/1000 > 60){
+        GET("http://poe.ninja/api/Data/GetStats")
+            .then(stats => {
+                let key = JSON.parse(stats);
+                if(!key) throw "couldnt find key on poe.ninja";
+                nextID = key.nextChangeId;
+                log("got key from poe.ninja, ", nextID);
+            })
+            .then(apiRequest)
+            .catch(err => log("Failed to start:", err));
+    }else{
+        nextID = dat;
+        log("got key from file", nextID);
+        apiRequest();
+    }
+});

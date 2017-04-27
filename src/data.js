@@ -1,7 +1,7 @@
 //This file is for data dumps, not for people
 
 //Name and abbriv of every currency
-module.exports.currMap = [
+export const currencyAbbrList = [
     ["Orb of Alteration", ["alt"]],
     ["Orb of Fusing", ["fuse", "fus"]],
     ["Orb of Alchemy", ["alch", "alchemy"]],
@@ -515,7 +515,7 @@ module.exports.currMap = [
     ["Warbands", ["warbands-leaguestone"]],
 ];
 
-module.exports.frameTypes = [
+export const frameTypes = [
     "normal",
     "magic",
     "rare",

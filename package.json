@@ -1,0 +1,41 @@
+{
+  "name": "gigigi",
+  "version": "1.0.0",
+  "description": "poe trade indexer",
+  "main": "c/index.js",
+  "scripts": {
+    "start": "node c --color=always",
+    "build": "babel src --out-dir c -s",
+    "buildw": "npm run build -- --watch",
+    "lint": "eslint src --color || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/John2143/gigigi.git"
+  },
+  "author": "John2143",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/John2143/gigigi/issues"
+  },
+  "homepage": "https://github.com/John2143/gigigi#readme",
+  "keywords": [
+    "poe",
+    "trade",
+    "indexer"
+  ],
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^3.19.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "colors": "^1.1.2",
+    "source-map-support": "^0.4.14"
+  }
+}
