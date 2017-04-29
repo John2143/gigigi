@@ -1,18 +1,46 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <script src="/socket.io/socket.io.js"></script>
-    <script src="/client.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js" integrity="sha256-jYMHiFJgIHHSIyPp1uwI5iv5dYgQZIxaQ4RwnpEeEDQ=" crossorigin="anonymous"></script>
+    <style>
+
+/* basically poe trade */
+body{
+  background-color: black;
+  color: #a38d6d;
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #cec59f;
+}
+
+.alert {
+}
+    </style>
   </head>
-  <body ng-app="main" ng-controller="same">
-    <div>{{times}}</div>
-    <div>{{curStashes}} / {{totalStashes}}</div>
-    <div>{{nextID}}</div>
-    <div>rl: {{rateLimit}}</div>
-    <div ng-repeat="whoop in alerts">
-      <div>{{whoop.whisper}}</div>
-      <div>{{whoop.desc}}</div>
+  <body ng-app="main" ng-controller="same" class="container">
+    <div id="ratelimit" class="row">
+      <div class="col-md-2">
+        <span ng-repeat="name in timesNames">{{name}}: {{perf.times[$index]}}s<br></span>
+        <span>stashes: {{perf.curStashes}}<br>total: {{totalStashes}}<br></span>
+        <span>Rate limit: {{perf.rateLimit}}ms</span>
+      </div>
+      <div class="col-md-5">
+        <canvas id="perfchart"></canvas>
+      </div>
+      <div class="col-md-5">nextID: {{nextID}}</div>
     </div>
+    <div ng-repeat="whoop in alerts | orderBy: '-'" class="alert" class="row">
+      <div>{{whoop.desc}}</div>
+      <div>{{dateDistance(whoop.time)}}</div>
+      <div>{{whoop.whisper}}</div>
+    </div>
+    <script src="/client.js"></script>
   </body>
 </html>
-

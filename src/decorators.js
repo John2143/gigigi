@@ -8,17 +8,18 @@ export const cache = (target, key, desc) => {
     };
     desc.set = function(val){
         cachedVal = val;
-    }
-}
+    };
+};
 
 global.filterFuncs = [];
 global.listOfSounds = [];
 
-export const alert = (sound = "alert.mp3") => (target, key, desc) => {
+export const alert = (sound = "whoop.mp3") => (target, key, desc) => {
     console.log(`adding ${key} func`);
     filterFuncs.push({func: desc.value, desc: key, sound: sound === "none" ? null : sound});
     if(listOfSounds.indexOf(sound) === -1 && sound !== "none") listOfSounds.push(sound);
 };
 
-export const whoop = (...r) => {return alert()(...r);};
-export const quiet = (...r) => {return alert("none")(...r);};
+export const whoop = (...r) => alert()(...r);
+export const ding = (...r) => alert("alert.mp3")(...r);
+export const quiet = (...r) => alert("none")(...r);

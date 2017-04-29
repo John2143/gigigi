@@ -4,9 +4,9 @@ import {emit} from "./server.js";
 export const itemToWhisper = (stash, it) => {
     // stashtypes: PremiumStash, EssenceStash, CurrencyStash, DivinationCardStash, QuadStash
     if(stash.stashType !== "PremiumStash" && stash.stashType !== "QuadStash"){
-        return `@${stash.lastCharacterName} Hi, I would like to buy your ${it.fullName} for ${it.priceTag.string} in ${it.league} (stash tab "${stash.stash}")`;
+        return `@${stash.lastCharacterName} Hi, I would like to buy your ${it.fullName} listed for ${it.priceTag.string} in ${it.league} (stash tab "${stash.stash}")`;
     }else{
-        return `@${stash.lastCharacterName} Hi, I would like to buy your ${it.fullName} for ${it.priceTag.string} in ${it.league} (stash tab "${stash.stash}"; position: left ${it.x + 1}, top ${it.y + 1})`;
+        return `@${stash.lastCharacterName} Hi, I would like to buy your ${it.fullName} listed for ${it.priceTag.string} in ${it.league} (stash tab "${stash.stash}"; position: left ${it.x + 1}, top ${it.y + 1})`;
     }
 };
 
