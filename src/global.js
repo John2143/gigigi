@@ -2,7 +2,7 @@ global.Promise = require("bluebird")
 
 global.http = require("http");
 global.https = require("https");
-global.fs = require("fs");
+global.fs = Promise.promisifyAll(require("fs"));
 
 global.GET = url => {
     return new Promise((resolve, reject) => {

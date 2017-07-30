@@ -49,11 +49,12 @@ export default class PriceTag{
         return null;
     }
 
-    static currencyFromAbbr(abbr){
-        for(let currency of currencyAbbrList){
-            for(let item of currency[1]){
+    static currencyIDFromAbbr(abbr){
+        for(let i = 0; i < currencyAbbrList.length; i++){
+            let currency = currencyAbbrList[i];
+            for(let item of currency[2]){
                 if(item === abbr){
-                    return currency;
+                    return i;
                 }
             }
         }
@@ -86,13 +87,14 @@ export default class PriceTag{
         split.type = split.type.toLowerCase();
 
         //loop through every currency type and match abbriveations
-        let currency = PriceTag.currencyFromAbbr(split.type);
-        if(currency){
+        let currencyid = PriceTag.currencyIDFromAbbr(split.type);
+        if(currencyid){
             this.priced = true;
             this.amount = split.amount;
             this.amountStr = split.amountStr;
-            this.currency = currency[0];
-            this.currencyshort = currency[0]
+            this.currencyid = currencyid;
+            this.currency = currencyAbbrList[currencyid][1];
+            this.currencyshort = this.currency
                 .toLowerCase()
                 .replace("orb of ", "")
                 .replace(" orb", "");

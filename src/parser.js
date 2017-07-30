@@ -1,17 +1,21 @@
 import itemFilter from "./filter.js";
 import PriceTag from "./PriceTag.js";
 
-const refineName = name => {
-    return name.replace(/<<.+>>/g, "");
-};
+const refineName = name => name.replace(/<<.+>>/g, "");
 
-const socketData = sockets => {
+const refineSocketData = sockets => {
+    //The longest link in the item
     let maxlink = 0;
-    let curlink = 0;
 
+    //The string representing the item (example: R-G-B-B + R-G)
     let linkstr = "";
 
+    //current link length
+    let curlink = 0;
+
     let group = -1;
+
+    //Map from api socket type to socket color
     const map = {
         D: "G", S: "R", I: "B", G: "W"
     };
@@ -48,7 +52,7 @@ export const parseItem = (stash, it) => {
 
     //create price tag
     it.priceTag = new PriceTag(it.note, stash.stash);
-    it.sockets = socketData(it.sockets);
+    it.sockets = refineSocketData(it.sockets);
     it.newProps = compactProperties(it.properties);
     it.newReqs = compactProperties(it.requirements);
 

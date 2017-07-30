@@ -1,8 +1,9 @@
 require('source-map-support').install();
 import "./global.js";
 
+import {runCurrency} from "./currencyRates.js";
 import {parseStash} from "./parser.js";
-import {emit} from "./server.js";
+import {emit, runServer} from "./server.js";
 
 const rateLimit = 2500;
 const savePath = "./save.id";
@@ -68,22 +69,29 @@ apiRequest = async () => {
     parseRequest(rawjson, timearr);
 };
 
-fs.readFile(savePath, "utf-8", (err, dat) => {
-    let stat;
+async function runIndexer(){
+    let dat = await fs.readFileAsync(savePath, "utf-8");
+
+    let stat, err;
     try{stat = fs.statSync(savePath);}catch(e){err = true;}
-    if(err || (new Date() - stat.mtime)/1000 > 60){
-        GET("http://poe.ninja/api/Data/GetStats")
-            .then(stats => {
-                let key = JSON.parse(stats);
-                if(!key) throw "couldnt find key on poe.ninja";
-                nextID = key.nextChangeId;
-                log("got key from poe.ninja, ", nextID);
-            })
-            .then(apiRequest)
-            .catch(err => log("Failed to start:", err));
+
+    let keyTooOld = (new Date() - stat.mtime)/1000 > 60;
+
+    if(err || keyTooOld){
+        log("Getting new key from poe.ninja");
+        let stats = await GET("http://poe.ninja/api/Data/GetStats")
+        let key = JSON.parse(stats);
+        if(!key) throw "couldnt find key on poe.ninja";
+        nextID = key.nextChangeId;
+        log("got key from poe.ninja, ", nextID);
+        apiRequest();
     }else{
         nextID = dat;
         log("got key from file", nextID);
         apiRequest();
-    }
-});
+    };
+};
+
+//runIndexer();
+runServer();
+runCurrency();
