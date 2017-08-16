@@ -19,3 +19,4 @@ global.log = (...args) => {
 };
 
 global.millis = () => new Date().getTime();
+global.LEAGUE = "Harbinger";

@@ -8,7 +8,6 @@ import {emit, runServer} from "./server.js";
 const rateLimit = 2500;
 const savePath = "./save.id";
 
-
 let nextID = "0";
 
 let timerPromise;

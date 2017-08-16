@@ -11,7 +11,7 @@ export const itemToWhisper = (stash, it) => {
 };
 
 export default (stash, it) => {
-    if(it.league !== "Legacy") return;
+    if(it.league !== LEAGUE) return;
     for(let filter of filterFuncs){
         if(filter.func(stash, it)){
             emit("alert", {

@@ -9,10 +9,7 @@ for(let i = 0; i < currencyAbbrList.length; i++){
     if(currencyAbbrList[i][0] === 1) candy.push(i);
 }
 
-//const league = "2+Week+Turmoil+%28JRE094%29";
-const league = "Standard";
-
-const url = (want, have) => `http://currency.poe.trade/search?league=${league}&online=x&want=${want}&have=${have}`;
+const url = (want, have) => `http://currency.poe.trade/search?league=${LEAGUE}&online=x&want=${want}&have=${have}`;
 
 const getCurrencyTrades = async (want, have) => {
     let poetrade = await GET(url(want, have));
