@@ -49,11 +49,3 @@ addSocketHook("updatecurr", async (sock, data) => {
     let curr = await currencyMarket(data[0], data[1]);
     sock.emit("currency", curr);
 });
-
-export async function runCurrency(){
-    try{
-    }catch(e){
-        log(e);
-        log("Currency is dead");
-    }
-}

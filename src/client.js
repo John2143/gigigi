@@ -50,6 +50,7 @@ socket.on("alertSoundList", dat => {
     sounds = {};
     for(let file of dat){
         sounds[file] = new Audio("/" + file);
+        sounds[file].volume = .1;
     }
     console.log("new sounds", sounds);
 });
@@ -78,7 +79,6 @@ socket.on("reqdata", dat => {
     $scope.nextID = dat.nextID;
     $scope.totalStashes += dat.numStashes;
     $scope.$apply();
-    setChart();
 });
 
 socket.on("currency", dat => {
@@ -115,7 +115,15 @@ socket.emit("requestdata");
 $scope.cnfa = id => $scope.constData.currencyAbbrList[id][1];
 $scope.cnfas = id => $scope.constData.currencyAbbrList[id][2][0];
 
+$scope.tabbuttons = ["Items", "Currency"];
+$scope.currentTab = $scope.tabbuttons[0];
+$scope.updateTab = tab => $scope.currentTab = tab;
 
+$scope.indexerState = {state: false};
+$scope.setIndexer = () => {
+    console.log("ind change", $scope.indexerState);
+    socket.emit("indexer", $scope.indexerState.state);
+};
 
 };
 

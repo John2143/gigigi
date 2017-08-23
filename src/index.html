@@ -1,33 +1,32 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <script src="/socket.io/socket.io.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js" integrity="sha256-jYMHiFJgIHHSIyPp1uwI5iv5dYgQZIxaQ4RwnpEeEDQ=" crossorigin="anonymous"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js" integrity="sha256-jYMHiFJgIHHSIyPp1uwI5iv5dYgQZIxaQ4RwnpEeEDQ=" crossorigin="anonymous"></script>-->
     <style>
 
 /* basically poe trade */
 body{
-  background-color: black;
-  color: #a38d6d;
+  background-color: #101935;
+  color: #F2FDFF;
   padding: 0;
   margin: 0;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #cec59f;
-}
-
-hr {
-  height: 10px;
-  border: 0;
-  box-shadow: 0 10px 10px -10px #cec59f inset;
+  color: #9AD4D6;
 }
 
 * {
   text-align: center;
+}
+
+button.active{
+  background-color: #DEBAC0 !important;
+  color: black !important;
 }
 
 .selectedaa {
@@ -37,18 +36,38 @@ hr {
     </style>
   </head>
   <body ng-app="main" ng-controller="same" class="container">
-    <div id="ratelimit" class="row">
-      <div class="col-md-2">
-        <span ng-repeat="name in timesNames">{{name}}: {{perf.times[$index]}}s<br></span>
-        <span>stashes: {{perf.curStashes}}<br>total: {{totalStashes}}<br></span>
-        <span>Rate limit: {{perf.rateLimit}}ms</span>
-      </div>
-      <!--<div class="col-md-5">-->
-        <!--<canvas id="perfchart"></canvas>-->
-      <!--</div>-->
-      <div class="col-md-5">nextID: {{nextID}}</div>
+    <div id="tabs" class="row">
+      <button ng-repeat="buttonName in tabbuttons" ng-model="buttonName"
+          class="btn btn-info" ng-click="updateTab(buttonName)"
+          ng-class="{active: currentTab==buttonName}">
+        {{buttonName}}
+      </button>
     </div>
-    <div id="flips" class="row">
+    <br>
+    <div id="tabs" class="row">
+      <input type="checkbox" ng-change="setIndexer()" ng-model="indexerState.state">Indexer on</input>
+    </div>
+    <br>
+    <div id="itemsTab" ng-if="currentTab == 'Items'">
+      <div id="ratelimit" class="row">
+        <div class="col-md-2">
+          <span ng-repeat="name in timesNames">{{name}}: {{perf.times[$index]}}s<br></span>
+          <span>stashes: {{perf.curStashes}}<br>total: {{totalStashes}}<br></span>
+          <span>Rate limit: {{perf.rateLimit}}ms</span>
+        </div>
+        <!--<div class="col-md-5">-->
+        <!--<canvas id="perfchart"></canvas>-->
+        <!--</div>-->
+        <div class="col-md-5">nextID: {{nextID}}</div>
+      </div>
+      <div ng-repeat="whoop in alerts | orderBy: '-'" class="alert" class="row">
+        <div>{{whoop.desc}}</div>
+        <div>{{dateDistance(whoop.time)}}</div>
+        <div>{{whoop.whisper}}</div>
+      </div>
+    </div>
+
+    <div id="currencyTab" ng-if="currentTab == 'Currency'">
       <div class="row">
         <button class="btn btn-info" type="button"
           ng-repeat="currency in baseCurrencies"
@@ -66,7 +85,7 @@ hr {
           {{cnfa(currency)}}
         </button>
         <hr>
-        <button class="btn btn-primary" type="button" ng-click="updateCurr()">update currency rates, {{c1}} {{c2}}</button>
+        <button class="btn btn-primary" type="button" ng-click="updateCurr()">update currency rates</button>
       </div>
 
       <div class="col-md-6" id="curbuy" ng-if="currency.a">
@@ -96,11 +115,6 @@ hr {
           </div>
         </div>
       </div>
-    </div>
-    <div ng-repeat="whoop in alerts | orderBy: '-'" class="alert" class="row">
-      <div>{{whoop.desc}}</div>
-      <div>{{dateDistance(whoop.time)}}</div>
-      <div>{{whoop.whisper}}</div>
     </div>
     <script src="/client.js"></script>
   </body>

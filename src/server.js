@@ -27,6 +27,10 @@ export async function runServer(){
     server.listen(6001);
 }
 
+export async function stopServer(){
+    server.close();
+}
+
 let extraHooks = {};
 export function addSocketHook(name, hook){
     extraHooks[name] = hook;
