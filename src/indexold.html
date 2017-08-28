@@ -1,6 +1,7 @@
 <html>
   <head>
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"></link>
+    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <script src="/socket.io/socket.io.js"></script>
     <script src="./vue.js"></script>
 
@@ -10,17 +11,25 @@
     </script>
     <script src="/data.js"></script>
     <script>window.constData = window.module.exports</script>
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.js" integrity="sha256-jYMHiFJgIHHSIyPp1uwI5iv5dYgQZIxaQ4RwnpEeEDQ=" crossorigin="anonymous"></script>-->
     <style>
 
-* {
+/* basically poe trade */
+body{
   background-color: #101935;
   color: #F2FDFF;
+  padding: 0;
+  margin: 0;
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #9AD4D6;
+}
+
+* {
+  text-align: center;
 }
 
 button.active{
@@ -34,13 +43,34 @@ button.active{
 
     </style>
   </head>
-  <div id="app" class="container" onload="startapp();">
-    <button v-for="it of tabButtons" class="btn btn-info"
-      @click="currentTab=it" :class="{active: currentTab == it}">
-      {{it}}
-    </button>
+  <body id="app" class="container">
+    <div id="tabs" class="row">
+      <button ng-repeat="buttonName in tabbuttons" ng-model="buttonName"
+          class="btn btn-info" ng-click="updateTab(buttonName)"
+          ng-class="{active: currentTab==buttonName}">
+        {{buttonName}}
+      </button>
+    </div>
+    <div id="itemsTab" ng-if="currentTab == 'Items'">
+      <div id="ratelimit" class="row">
+        <div class="col-xs-2">
+          <span ng-repeat="name in timesNames">{{name}}: {{perf.times[$index]}}s<br></span>
+          <span>stashes: {{perf.curStashes}}<br>total: {{totalStashes}}<br></span>
+          <span>Rate limit: {{perf.rateLimit}}ms</span>
+        </div>
+        <!--<div class="col-xs-5">-->
+        <!--<canvas id="perfchart"></canvas>-->
+        <!--</div>-->
+        <div class="col-xs-5">nextID: {{nextID}}</div>
+      </div>
+      <div ng-repeat="whoop in alerts | orderBy: '-'" class="alert" class="row">
+        <div>{{whoop.desc}}</div>
+        <div>{{dateDistance(whoop.time)}}</div>
+        <div>{{whoop.whisper}}</div>
+      </div>
+    </div>
 
-    <div id="currencyTab" class="container" v-if="currentTab == 'Currency'">
+    <div id="currencyTab" ng-if="currentTab == 'Currency'">
       <div class="row">
         <button class="btn btn-info" type="button"
           ng-repeat="currency in baseCurrencies"
@@ -104,7 +134,6 @@ button.active{
         </div>
       </div>
     </div>
-  </div>
-
-  <script src="/client.js"></script>
+    <script src="/client.js"></script>
+  </body>
 </html>

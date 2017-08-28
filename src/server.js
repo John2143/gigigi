@@ -6,10 +6,12 @@ let server = http.createServer((req, res) => {
     let path = url.parse(req.url).pathname;
 
     //Default to index.html
-    if(path === "/") path = "/index.html";
+    if(path === "/") path = "./src/index.html";
+    else if(path === "/vue.js") path = "./src/vue.js";
+    else if(path.endsWith(".js")) path = "./c/" + path;
+    else path = "./src/" + path;
 
     try{
-        path = (path.endsWith(".js") ? "./c/" : "./src/") + path;
         //check if it exists
         fs.statSync(path);
 
