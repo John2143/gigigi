@@ -11,6 +11,9 @@ export async function runAll(){
     runServer();
 }
 
+//If included by node process
 if(require.main === module){
+    //Indexer is not started by default, its a big resource hog
     runServer();
+    if(processFlags.i) runIndexer();
 };

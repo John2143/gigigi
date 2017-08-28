@@ -5,17 +5,19 @@ import * as url from "url";
 let server = http.createServer((req, res) => {
     let path = url.parse(req.url).pathname;
 
-    if(path === "/"){
-        path = "/index.html";
-    }
+    //Default to index.html
+    if(path === "/") path = "/index.html";
 
-    res.writeHead(200);
-    //res.end("lol");
     try{
-        path = "./src/" + path;
+        path = (path.endsWith(".js") ? "./c/" : "./src/") + path;
+        //check if it exists
         fs.statSync(path);
+
+        res.writeHead(200);
         fs.createReadStream(path).pipe(res);
     }catch(e){
+        res.writeHead(404);
+        res.end();
     }
 });
 
@@ -39,7 +41,6 @@ export function addSocketHook(name, hook){
 io.on("connection", socket => {
     console.log("socket connection");
     emit("connected");
-    socket.emit("alertSoundList", listOfSounds);
     socket.emit("youconnected");
     for(let hook in extraHooks){
         socket.on(hook, function(data){

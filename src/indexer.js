@@ -1,6 +1,3 @@
-
-import {addSocketHook} from "./server.js";
-
 const rateLimit = 2500;
 const savePath = "./save.id";
 
@@ -13,7 +10,7 @@ const newTimerPromise = time => {
     });
 };
 
-let indexerRunning
+let indexerRunning = false;
 let apiRequest;
 
 const parseRequest = (rawjson, timearr) => {
@@ -46,7 +43,7 @@ const parseRequest = (rawjson, timearr) => {
     }
 
     log(`got ${stashes.length} stashes, download ${times[0]}s, json ${times[1]}s, parse ${times[2]}s`);
-    emit("reqdata", {times, numStashes: stashes.length, rateLimit, nextID});
+    emit("indexerProfile", {times, numStashes: stashes.length, rateLimit, nextID});
 
     if(indexerRunning) timerPromise
         .then(apiRequest)
@@ -66,15 +63,19 @@ apiRequest = async () => {
 };
 
 export async function runIndexer(){
+    if(indexerRunning) return;
+
     indexerRunning = true;
-    let dat = await fs.readFileAsync(savePath, "utf-8");
 
-    let stat, err;
-    try{stat = fs.statSync(savePath);}catch(e){err = true;}
+    let badKey = true;
+    try{
+        let stat = await fs.statSync(savePath);
+        let dat = await fs.readFileAsync(savePath, "utf-8");
+        badKey = (new Date() - stat.mtime)/1000 > 60;
+    }catch(e){
+    }
 
-    let keyTooOld = (new Date() - stat.mtime)/1000 > 60;
-
-    if(err || keyTooOld){
+    if(badKey){
         log("Getting new key from poe.ninja");
         let stats = await GET("http://poe.ninja/api/Data/GetStats")
         let key = JSON.parse(stats);
@@ -92,13 +93,3 @@ export async function runIndexer(){
 export function stopIndexer(){
     indexerRunning = false;
 };
-
-addSocketHook("indexer", async (sock, data) => {
-    log(data);
-    data = !!data;
-    if(indexerRunning !== data){
-        if(data) runIndexer(); else stopIndexer();
-    }
-    log("indexer " + data);
-    sock.emit("indexerStatus", data);
-});

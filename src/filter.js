@@ -12,7 +12,11 @@ export const itemToWhisper = (stash, it) => {
 
 export default (stash, it) => {
     if(it.league !== LEAGUE) return;
+
+    //filterFuncs are from decorator.js
     for(let filter of filterFuncs){
+
+        //test each filter to see if it passes
         if(filter.func(stash, it)){
             emit("alert", {
                 desc: filter.desc,

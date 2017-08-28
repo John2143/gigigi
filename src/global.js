@@ -20,3 +20,25 @@ global.log = (...args) => {
 
 global.millis = () => new Date().getTime();
 global.LEAGUE = "Harbinger";
+
+do{
+    let flagName = null;
+    let flags = {};
+
+    for(let x = 2; x < process.argv.length; x++){
+        let cur = process.argv[x];
+
+        if(cur[0] == "-"){
+            if(flagName) flags[flagName] = true;
+            flagName = cur.slice(1);
+        }else{
+            if(flagName){
+                flags[flagName] = cur;
+            }
+            flagName = null;
+        }
+    }
+    if(flagName) flags[flagName] = true;
+
+    global.processFlags = flags;
+} while(0);
