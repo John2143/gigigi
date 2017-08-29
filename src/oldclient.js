@@ -36,6 +36,7 @@ app.controller("same", function($scope){
 
 });
 
+window.socket = io();
 socket.on("youconnected", () => {
     console.log("Connected...");
 });
