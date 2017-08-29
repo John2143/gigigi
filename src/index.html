@@ -5,106 +5,42 @@
     <script src="./vue.js"></script>
 
     <script>
-        window.exports = {};
-        window.module = {exports};
+      window.exports = {};
+      window.module = {exports};
     </script>
     <script src="/data.js"></script>
     <script>window.constData = window.module.exports</script>
     <style>
+      body{
+        background-color: #101935;
+        color: #F2FDFF;
+        font-family: "Helvetica Neue", "Helvetica", sans-serif;
+        text-align: center;
+      }
 
-* {
-  background-color: #101935;
-  color: #F2FDFF;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  text-align: center;
-}
+      h1, h2, h3, h4, h5, h6 {
+        color: #9AD4D6;
+      }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #9AD4D6;
-}
+      button.active{
+        background-color: #DEBAC0 !important;
+        color: black !important;
+      }
 
-button.active{
-  background-color: #DEBAC0 !important;
-  color: black !important;
-}
-
-.selectedaa {
-  color: red;
-}
-
+      .selectedaa {
+        color: red;
+      }
     </style>
   </head>
-  <div id="app" class="container" onload="startapp();">
-    <button v-for="it of tabButtons" class="btn btn-info"
-      @click="currentTab=it" :class="{active: currentTab == it}">
-      {{it}}
-    </button>
+  <body>
+  <div id="app" class="container" class="col-xs-12">
+    <button-list :buttons="['Items', 'Currency']" :change="setCurrentTab"></button-list>
 
-    <div id="currencyTab" class="container" v-if="currentTab == 'Currency'">
-      <div class="row">
-        <button class="btn btn-info" type="button"
-          ng-repeat="currency in baseCurrencies"
-          ng-click="setBase(currency)"
-          ng-class="{active: currency==currentBase}">
-
-          {{cnfa(currency)}}
-        </button>
-        <hr>
-        <button class="btn btn-info" type="button"
-          ng-repeat="currency in candy"
-          ng-click="setCandy(currency)"
-          ng-class="{active: currency==currentCandy}">
-
-          {{cnfa(currency)}}
-        </button>
-        <hr>
-        <button class="btn btn-primary" type="button" ng-click="updateCurr()">update currency rates</button>
-        <!--<input type="checkbox" ng-model="currencies.show0Stock">show 0 stock</input>-->
-      </div>
-
-      <div class="col-xs-6" id="curbuy" ng-if="currency">
-        {{cnfa(currency.a)}} Sellers
-        <div class="row" ng-repeat="order in currency.atob">
-          <hr>
-          <div class="col-xs-6">
-            {{order.dispratio}}:1
-          </div>
-          <div class="col-xs-6">
-            {{order.buyvalue}}{{cnfas(order.buycurrency)}} &rArr;
-            {{order.sellvalue}}{{cnfas(order.sellcurrency)}}
-          </div>
-          <br>
-          <div class="col-xs-6">
-            {{order.ign}}
-          </div>
-          <div class="col-xs-6" ng-if="order.stock">
-            {{order.stock}}{{cnfas(order.sellcurrency)}} stock
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-6" id="cursell" ng-if="currency">
-        {{cnfa(currency.b)}} Sellers
-        <div class="row" ng-repeat="order in currency.btoa">
-          <hr>
-          <div class="col-xs-6">
-            {{order.dispratio}}:1
-          </div>
-          <div class="col-xs-6">
-            {{order.buyvalue}}{{cnfas(order.buycurrency)}} &rArr;
-            {{order.sellvalue}}{{cnfas(order.sellcurrency)}}
-          </div>
-          <br>
-          <div class="col-xs-6">
-            {{order.ign}}
-          </div>
-          <div class="col-xs-6" ng-if="order.stock">
-            {{order.stock}}{{cnfas(order.sellcurrency)}} stock
-          </div>
-        </div>
-      </div>
-    </div>
+    <currency-tab v-show="currentTab=='Currency'"></currency-tab>
+    <items-tab v-show="currentTab=='Items'"></items-tab>
   </div>
+
+  </body>
 
   <script src="/client.js"></script>
 </html>
