@@ -1,5 +1,7 @@
 let socket = io();
 
+let LEAGUE = "Harbinger";
+
 Vue.mixin({
     methods: {
         //Currency translate
@@ -14,22 +16,43 @@ Vue.component("order", {
     template: `
     <div class="row">
       <hr>
-      <div class="col-xs-6">
-        {{order.dispratio}}:1
+
+      <div class="col-xs-2">
+          lul
       </div>
-      <div class="col-xs-6">
+      <div class="col-xs-5">
+        {{order.ratiosell.toFixed(3)}} &rArr;
+        1 &rArr;
+        {{order.ratiobuy.toFixed(3)}}
+      </div>
+      <div class="col-xs-5">
         {{order.buyvalue}}{{cnfas(order.buycurrency)}} &rArr;
         {{order.sellvalue}}{{cnfas(order.sellcurrency)}}
       </div>
+
       <br>
-      <div class="col-xs-6">
+
+      <div class="col-xs-2" @click="t">
+          message
+      </div>
+      <div class="col-xs-5">
         {{order.ign}}
       </div>
-      <div class="col-xs-6" v-if="order.stock">
+      <div class="col-xs-5" v-if="order.stock">
         {{order.stock}}{{cnfas(order.sellcurrency)}} stock
       </div>
     </div>
     `,
+    methods: {
+        getBuyText(){
+            return `@${this.order.ign} Hi, I would like to buy
+                your ${this.order.sellvalue} ${this.cnfa(this.order.sellcurrency)} for my
+                ${this.order.buyvalue} ${this.cnfa(this.order.buycurrency)} in ${LEAGUE}`;
+        },
+        t(){
+            console.log(this.getBuyText());
+        }
+    }
 });
 
 Vue.component("sellerList", {
@@ -37,7 +60,7 @@ Vue.component("sellerList", {
     template: `
     <div class="col-xs-6 container">
       {{cnfa(type)}} Sellers
-      <order v-for="order in orderList" :order="order"></order>
+      <order v-for="order of orderList" :order="order"></order>
     </div>
     `,
     computed: {
