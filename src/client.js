@@ -18,40 +18,84 @@ Vue.component("order", {
       <hr>
 
       <div class="col-xs-2">
-          lul
+        <button class="btn btn-primary" @click="open = !open">{{open ? "Close" : "Buy"}}</button>
       </div>
       <div class="col-xs-5">
         {{order.ratiosell.toFixed(3)}} &rArr;
         1 &rArr;
         {{order.ratiobuy.toFixed(3)}}
+        <br>
+        {{order.ign}}
       </div>
       <div class="col-xs-5">
         {{order.buyvalue}}{{cnfas(order.buycurrency)}} &rArr;
         {{order.sellvalue}}{{cnfas(order.sellcurrency)}}
+        <br>
+        <span v-if="order.stock">
+          {{order.stock}} {{cnfas(order.sellcurrency)}}
+        </span>
       </div>
-
-      <br>
-
-      <div class="col-xs-2" @click="t">
-          message
-      </div>
-      <div class="col-xs-5">
-        {{order.ign}}
-      </div>
-      <div class="col-xs-5" v-if="order.stock">
-        {{order.stock}}{{cnfas(order.sellcurrency)}} stock
+      <div v-if="open" class="col-xs-12">
+        <div class="col-xs-2">
+          <input type="text" v-model="buyAmount" class="form-control" 
+            v-on:keyup.13="$event.target.blur()"
+            v-on:blur="sanatizeMultiplier()"
+            v-on:focus="$event.target.select()">
+        </div>
+        <div class="col-xs-5">
+          <button class="btn btn-primary" @click="buyAmount += order.buyvalue; sanatizeMultiplier()">+{{order.buyvalue}}</button>
+          <button class="btn btn-primary" @click="buyAmount -= order.buyvalue; sanatizeMultiplier()">-{{order.buyvalue}}</button>
+        </div>
+        <div class="col-xs-5">
+          <span>{{buyTextShort}}</span>
+        </div>
+        <div class="col-xs-12">
+          <input type="text" v-model="buyTextMsg" class="form-control" readonly
+            v-on:focus="$event.target.select()">
+        </div>
+        <div class="col-xs-12">
+          <h4 v-if="warnings.tax"   class="trade-warning">Non-even trade: recieving amount rounded down.</h4>
+          <h4 v-if="warnings.bm"    class="trade-warning">Trading for less than the offered amount is bad manners, even if the ratio is the same.</h4>
+          <h4 v-if="warnings.stock" class="trade-warning">This user may not have enough stock to complete the trade.</h4>
+        </div>
       </div>
     </div>
     `,
-    methods: {
-        getBuyText(){
-            return `@${this.order.ign} Hi, I would like to buy
-                your ${this.order.sellvalue} ${this.cnfa(this.order.sellcurrency)} for my
-                ${this.order.buyvalue} ${this.cnfa(this.order.buycurrency)} in ${LEAGUE}`;
+    data(){
+        return{
+            multiplier: 1,
+            buyAmount: this.order.buyvalue,
+            warnings: {},
+            open: false,
+        };
+    },
+    computed: {
+        computedSellValue(){
+            return Math.floor(this.multiplier * this.order.sellvalue);
         },
-        t(){
-            console.log(this.getBuyText());
-        }
+        computedBuyValue(){
+            return this.multiplier * this.order.buyvalue;
+        },
+        buyTextShort(){
+            return `${this.computedBuyValue} => ${this.computedSellValue}`;
+        },
+        buyTextMsg(){
+            return `@${this.order.ign} Hi, I would like to buy your ${this.computedSellValue} ${this.cnfa(this.order.sellcurrency)} for my ${this.computedBuyValue} ${this.cnfa(this.order.buycurrency)} in ${LEAGUE}`;
+        },
+    },
+    methods: {
+        sanatizeMultiplier(){
+            this.buyAmount = Number(this.buyAmount);
+            if(!this.buyAmount || this.buyAmount == NaN) this.multiplier = 1;
+            if(this.buyAmount < 1) this.buyAmount = 1;
+            this.buyAmount = Math.floor(this.buyAmount);
+
+            this.multiplier = Number(this.buyAmount / this.order.buyvalue);
+
+            this.warnings.bm = this.multiplier < 1;
+            this.warnings.stock = (this.order.stock && this.multiplier * this.order.sellvalue > this.order.stock);
+            this.warnings.tax = !Number.isInteger(this.multiplier * this.order.buyvalue);
+        },
     }
 });
 
@@ -88,6 +132,9 @@ Vue.component("currencyTab", {
       <div class="checkbox">
         <label><input type="checkbox" v-model="showStockOnly">show stock only</label>
       </div>
+      <div class="checkbox">
+        <label><input type="checkbox" v-model="devMode">client only</label>
+      </div>
       <button-list :buttons="baseCurrencies.map(cnfa)" :change="setBase"></button-list>
       <button-list :buttons="hasAllCurrencies ? allOtherCurrencies.map(cnfa) : otherCurrencies.map(cnfa)" :change="setOther"></button-list>
       <div v-if="currency">
@@ -106,10 +153,28 @@ Vue.component("currencyTab", {
             currency: null,
             hasAllCurrencies: false,
             showStockOnly: false,
+            devMode: true,
         };
     },
     methods: {
         updateCurr(){
+            this.currency = null;
+
+            if(this.devMode){
+                let tmpRates = localStorage.tmpRates;
+                tmpRates = JSON.parse(tmpRates);
+                setTimeout(() => {
+                    this.currency = {
+                        a: tmpRates.a,
+                        b: tmpRates.b,
+                        atob: tmpRates.atob,
+                        btoa: tmpRates.btoa,
+                    };
+                }, 0);
+
+                return;
+            }
+
             let a = this.currentBase;
             let b = this.currentOther;
             socket.emit("updatecurr", [a, b]);
@@ -128,6 +193,7 @@ Vue.component("currencyTab", {
     },
     created(){
         socket.on("currency", dat => {
+            localStorage.tmpRates = JSON.stringify(dat);
             this.currency = dat;
             console.log("done", dat);
         });
