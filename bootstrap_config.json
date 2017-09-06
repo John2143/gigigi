@@ -383,14 +383,12 @@
   },
   "css": [
     "print.less",
-    "type.less",
     "code.less",
     "grid.less",
     "tables.less",
     "forms.less",
     "buttons.less",
     "responsive-utilities.less",
-    "glyphicons.less",
     "button-groups.less",
     "input-groups.less",
     "navs.less",
@@ -408,9 +406,8 @@
     "list-group.less",
     "panels.less",
     "responsive-embed.less",
-    "wells.less",
-    "close.less"
+    "wells.less"
   ],
   "js": [],
-  "customizerUrl": "https://getbootstrap.com/docs/3.3/customize/?id=2a06743dd239db91a70267e8a750eb4f"
+  "customizerUrl": "https://getbootstrap.com/docs/3.3/customize/?id=28f79df64460e1fa6bc0ae114f46c223"
 }
