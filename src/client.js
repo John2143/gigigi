@@ -37,14 +37,14 @@ Vue.component("order", {
       </div>
       <div v-if="open" class="col-xs-12">
         <div class="col-xs-2">
-          <input type="text" v-model="buyAmount" class="form-control" 
+          <input type="text" v-model="buyAmount" class="form-control"
             v-on:keyup.13="$event.target.blur()"
             v-on:blur="sanatizeMultiplier()"
             v-on:focus="$event.target.select()">
         </div>
         <div class="col-xs-5">
-          <button class="btn btn-primary" @click="buyAmount += order.buyvalue; sanatizeMultiplier()">+{{order.buyvalue}}</button>
-          <button class="btn btn-primary" @click="buyAmount -= order.buyvalue; sanatizeMultiplier()">-{{order.buyvalue}}</button>
+          <button class="btn btn-primary" @click="buyAmount += order.sellvalue; sanatizeMultiplier()">+{{order.sellvalue}}</button>
+          <button class="btn btn-primary" @click="buyAmount -= order.sellvalue; sanatizeMultiplier()">-{{order.sellvalue}}</button>
         </div>
         <div class="col-xs-5">
           <span>{{buyTextShort}}</span>
@@ -64,17 +64,17 @@ Vue.component("order", {
     data(){
         return{
             multiplier: 1,
-            buyAmount: this.order.buyvalue,
+            buyAmount: this.order.sellvalue,
             warnings: {},
             open: false,
         };
     },
     computed: {
         computedSellValue(){
-            return Math.floor(this.multiplier * this.order.sellvalue);
+            return this.multiplier * this.order.sellvalue;
         },
         computedBuyValue(){
-            return this.multiplier * this.order.buyvalue;
+            return Math.floor(this.multiplier * this.order.buyvalue);
         },
         buyTextShort(){
             return `${this.computedBuyValue} => ${this.computedSellValue}`;
@@ -90,13 +90,17 @@ Vue.component("order", {
             if(this.buyAmount < 1) this.buyAmount = 1;
             this.buyAmount = Math.floor(this.buyAmount);
 
-            this.multiplier = Number(this.buyAmount / this.order.buyvalue);
+            this.multiplier = Number(this.buyAmount / this.order.sellvalue);
 
             this.warnings.bm = this.multiplier < 1;
             this.warnings.stock = (this.order.stock && this.multiplier * this.order.sellvalue > this.order.stock);
-            this.warnings.tax = !Number.isInteger(this.multiplier * this.order.buyvalue);
+            this.warnings.tax = !Number.isInteger(this.multiplier * this.order.sellvalue);
         },
-    }
+    },
+    created(){
+        //Make sure to apply warnings
+        this.sanatizeMultiplier();
+    },
 });
 
 Vue.component("sellerList", {
