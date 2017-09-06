@@ -1,6 +1,7 @@
-let socket = io();
 
-let LEAGUE = "Harbinger";
+Vue.prototype.$socket = io();
+Vue.prototype.$LEAGUE = "Harbinger";
+Vue.prototype.$isDev = true;
 
 Vue.mixin({
     methods: {
@@ -80,7 +81,7 @@ Vue.component("order", {
             return `${this.computedBuyValue} => ${this.computedSellValue}`;
         },
         buyTextMsg(){
-            return `@${this.order.ign} Hi, I would like to buy your ${this.computedSellValue} ${this.cnfa(this.order.sellcurrency)} for my ${this.computedBuyValue} ${this.cnfa(this.order.buycurrency)} in ${LEAGUE}`;
+            return `@${this.order.ign} Hi, I would like to buy your ${this.computedSellValue} ${this.cnfa(this.order.sellcurrency)} for my ${this.computedBuyValue} ${this.cnfa(this.order.buycurrency)} in ${this.$LEAGUE}`;
         },
     },
     methods: {
@@ -136,7 +137,7 @@ Vue.component("currencyTab", {
       <div class="checkbox">
         <label><input type="checkbox" v-model="showStockOnly">show stock only</label>
       </div>
-      <div class="checkbox">
+      <div class="checkbox" v-if="$isDev">
         <label><input type="checkbox" v-model="devMode">client only</label>
       </div>
       <button-list :buttons="baseCurrencies.map(cnfa)" :change="setBase"></button-list>
@@ -157,7 +158,7 @@ Vue.component("currencyTab", {
             currency: null,
             hasAllCurrencies: false,
             showStockOnly: false,
-            devMode: true,
+            devMode: this.$isDev,
         };
     },
     methods: {
@@ -181,8 +182,7 @@ Vue.component("currencyTab", {
 
             let a = this.currentBase;
             let b = this.currentOther;
-            socket.emit("updatecurr", [a, b]);
-            console.log("updatecurr", [a, b]);
+            this.$socket.emit("updatecurr", [a, b]);
         },
         setBase(id, val){
             this.currentBase = this.baseCurrencies[id];
@@ -196,10 +196,9 @@ Vue.component("currencyTab", {
         },
     },
     created(){
-        socket.on("currency", dat => {
-            localStorage.tmpRates = JSON.stringify(dat);
+        this.$socket.on("currency", dat => {
+            if(this.$isDev) localStorage.tmpRates = JSON.stringify(dat);
             this.currency = dat;
-            console.log("done", dat);
         });
 
         //Calculate the currencies that should be included based on whether
@@ -244,7 +243,7 @@ Vue.component("itemsTab", {
             this.sounds[file].volume = .1;
         }
 
-        socket.on("alert", (...r) => this.addAlert(...r));
+        this.$socket.on("alert", (...r) => this.addAlert(...r));
     }
 });
 
