@@ -40,9 +40,9 @@
                                                         v-on:focus="$event.target.select()">
             </div>
             <div class="col-xs-12">
-                <h4 v-if="warnings.tax"   class="trade-warning">Non-even trade: recieving amount rounded down.</h4>
-                <h4 v-if="warnings.bm"    class="trade-warning">Trading for less than the offered amount is bad manners, even if the ratio is the same.</h4>
-                <h4 v-if="warnings.stock" class="trade-warning">This user may not have enough stock to complete the trade.</h4>
+                <h4 v-if="warnings.tax"   class="text-warning">Non-even trade: recieving amount rounded down.</h4>
+                <h4 v-if="warnings.bm"    class="text-warning">Trading for less than the offered amount is bad manners, even if the ratio is the same.</h4>
+                <h4 v-if="warnings.stock" class="text-warning">This user may not have enough stock to complete the trade.</h4>
             </div>
         </div>
     </div>

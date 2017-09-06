@@ -1,7 +1,7 @@
 <template>
     <div class="col-xs-6 container">
       {{cnfa(type)}} Sellers
-      <order v-for="order of orderList" :order="order"></order>
+      <order v-for="order of orderList" :order="order" :key="order.ign"></order>
     </div>
 </template>
 <script>

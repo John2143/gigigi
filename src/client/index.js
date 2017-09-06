@@ -2,10 +2,10 @@
 import Vue from "vue";
 import index from "./index.vue";
 import * as constData from "../shared/data.js";
-//import socketio from "socket.io";
+import io from "socket.io-client/dist/socket.io.slim.js";
 
-//Vue.prototype.$socket = socketio();
-Vue.prototype.$socket = {emit: () => {}, on: () => {}};
+Vue.prototype.$socket = io();
+//Vue.prototype.$socket = {emit: () => {}, on: () => {}};
 Vue.prototype.$constData = constData;
 Vue.prototype.$LEAGUE = "Harbinger";
 Vue.prototype.$isDev = true;

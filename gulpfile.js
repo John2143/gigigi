@@ -1,54 +1,51 @@
 let gulp = require("gulp");
 let gutil = require("gulp-util");
-let merge = require("merge-stream");
-let pump = require("pump");
+let concat = require("gulp-concat");
+let browserify = require("browserify");
+let fs = require("fs");
 
 let babel = require("gulp-babel");
 let babelConfig = babel({
     "plugins": ["transform-es2015-modules-commonjs", "transform-decorators-legacy"]
 });
 
-let uglify = require("gulp-uglify");
-let webpacks = require("webpack-stream");
-let webpack = require("webpack");
+let sourcemaps = require("gulp-sourcemaps");
+let source = require("vinyl-source-stream");
+let buffer = require("vinyl-buffer");
 
-gulp.task("client", ["vue"]);
+let isProduction = !!gutil.env.prod;
+let watch = !!gutil.env.watch;
+
+gulp.task("client", ["vue", "css"]);
 
 gulp.task("vue", () => {
-    return pump([
-        gulp.src("src/client/index.js"),
-        webpacks({
-            watch: gutil.env.watch ? true : false,
-            output: {
-                filename: "index.js",
-            },
-            resolve: {
-                alias: {
-                    'vue$': 'vue/dist/vue.esm.js',
-                },
-            },
-            module: {
-                rules: [
-                    {
-                        test: /\.vue$/,
-                        loader: 'vue-loader',
-                    },
-                    {
-                        test: /\.js$/,
-                        loader: 'babel-loader',
-                    },
-                ],
-            },
-            plugins: [
-                new webpack.DefinePlugin({
-                    'process.env': {
-                        NODE_ENV: '"development"'
-                    }
-                })
-            ]
-        }),
-        gulp.dest("client"),
-    ]);
+    let src = "./src/client/index.js"
+    let br = browserify(src, {debug: !isProduction})
+        .transform("babelify", {presets: ["es2015"], sourceMaps: !isProduction})
+        .transform("vueify");
+
+    if(isProduction){
+        br = br.transform(require("envify/custom")({
+                NODE_ENV: isProduction ? "production" : "development",
+            }), {global: true})
+            .transform("uglifyify", {global: true})
+            .bundle()
+    }else{
+        br = br.bundle()
+            .pipe(source("index.js"))
+            .pipe(buffer())
+            .pipe(sourcemaps.init({loadMaps: true}))
+            .pipe(sourcemaps.write("./"));
+    }
+
+    return br
+        .pipe(gulp.dest("./client"));
+});
+
+gulp.task("css", () => {
+    return gulp.src("src/client/**/*.css")
+        .pipe(concat("index.css"))
+        .pipe(gulp.dest("client"));
 });
 
 gulp.task("server", () => {
