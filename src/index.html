@@ -1,42 +1,36 @@
 <html>
-  <head>
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"></link>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./vue.js"></script>
+  <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"></link>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./vue.js"></script>
+  <script src="/client.js"></script>
 
-    <script>
-      window.exports = {};
-      window.module = {exports};
-    </script>
-    <script src="/data.js"></script>
-    <script>window.constData = window.module.exports</script>
-    <style>
-      body{
-        background-color: #101935;
-        color: #F2FDFF;
-        font-family: "Helvetica Neue", "Helvetica", sans-serif;
-        text-align: center;
-      }
+  <script>
+    window.exports = {};
+    window.module = {exports};
+  </script>
+  <script src="/data.js"></script>
+  <script>window.constData = window.module.exports</script>
+  <style>
+    body{
+      background-color: #101935;
+      color: #F2FDFF;
+      font-family: "Helvetica Neue", "Helvetica", sans-serif;
+      text-align: center;
+    }
 
-      h1, h2, h3, h4, h5, h6 {
-        color: #9AD4D6;
-      }
+    h1, h2, h3, h4, h5, h6 {
+      color: #9AD4D6;
+    }
+    button.active{
+      background-color: #DEBAC0 !important;
+      color: black !important;
+    }
+  </style>
 
-      button.active{
-        background-color: #DEBAC0 !important;
-        color: black !important;
-      }
-    </style>
-  </head>
-  <body>
   <div id="app" class="container" class="col-xs-12">
     <button-list :buttons="['Items', 'Currency']" :change="setCurrentTab"></button-list>
 
     <currency-tab v-show="currentTab=='Currency'"></currency-tab>
     <items-tab v-show="currentTab=='Items'"></items-tab>
   </div>
-
-  </body>
-
-  <script src="/client.js"></script>
 </html>

@@ -272,14 +272,23 @@ Vue.component("buttonList", {
     },
 });
 
-let app = new Vue({
-    el: "#app",
-    data: {
-        currentTab: null,
-    },
-    methods: {
-        setCurrentTab(id, val){
-            this.currentTab = val;
-        }
-    },
-});
+let loaded = false;
+let runVue = function(){
+    if(loaded) return;
+    loaded = true;
+
+    let app = new Vue({
+        el: "#app",
+        data: {
+            currentTab: null,
+        },
+        methods: {
+            setCurrentTab(id, val){
+                this.currentTab = val;
+            }
+        },
+    });
+};
+
+if(document.readyState === "complete") runVue();
+else document.addEventListener("DOMContentLoaded", runVue);
