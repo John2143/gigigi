@@ -28,11 +28,13 @@ gulp.task("vue", () => {
         br = br.transform(require("envify/custom")({
                 NODE_ENV: isProduction ? "production" : "development",
             }), {global: true})
-            .transform("uglifyify", {global: true})
-            .bundle()
-    }else{
-        br = br.bundle()
-            .pipe(source("index.js"))
+            .transform("uglifyify", {global: true});
+    }
+
+    br = br.bundle();
+
+    if(!isProduction){
+        br = br.pipe(source("index.js"))
             .pipe(buffer())
             .pipe(sourcemaps.init({loadMaps: true}))
             .pipe(sourcemaps.write("./"));
@@ -54,4 +56,21 @@ gulp.task("server", () => {
         .pipe(gulp.dest("server"));
 });
 
+gulp.task("watchclient", ["watchshared"], () => {
+    gulp.watch("./src/client/**/*.vue", ["vue"]);
+    gulp.watch("./src/client/**/*.js", ["vue"]);
+    gulp.watch("./src/client/**/*.css", ["css"]);
+});
+
+gulp.task("watchshared", () => {
+    console.log("run");
+    gulp.watch("./src/shared/**/*.js", ["server", "vue"]);
+});
+
+gulp.task("watchserver", ["watchshared"], () => {
+    gulp.watch("./src/server/**/*.js", ["server"]);
+});
+
 gulp.task("default", ["server", "client"]);
+
+gulp.task("watch", ["watchserver", "watchclient"]);
