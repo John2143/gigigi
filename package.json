@@ -7,7 +7,7 @@
     "start": "node server --color=always",
     "build": "gulp",
     "buildw": "gulp --watch",
-    "lint": "eslint src/server --color || exit 0"
+    "lint": "eslint src/ --color || exit 0"
   },
   "repository": {
     "type": "git",
