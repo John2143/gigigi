@@ -12,6 +12,7 @@ let babelConfig = babel({
 let sourcemaps = require("gulp-sourcemaps");
 let source = require("vinyl-source-stream");
 let buffer = require("vinyl-buffer");
+let eslint = require("gulp-eslint");
 
 let isProduction = !!gutil.env.prod;
 let watch = !!gutil.env.watch;
@@ -26,7 +27,7 @@ gulp.task("vue", () => {
 
     if(isProduction){
         br = br.transform(require("envify/custom")({
-                NODE_ENV: isProduction ? "production" : "development",
+                NODE_ENV: "production",
             }), {global: true})
             .transform("uglifyify", {global: true});
     }
@@ -63,7 +64,6 @@ gulp.task("watchclient", ["watchshared"], () => {
 });
 
 gulp.task("watchshared", () => {
-    console.log("run");
     gulp.watch("./src/shared/**/*.js", ["server", "vue"]);
 });
 
@@ -74,3 +74,9 @@ gulp.task("watchserver", ["watchshared"], () => {
 gulp.task("default", ["server", "client"]);
 
 gulp.task("watch", ["watchserver", "watchclient"]);
+
+gulp.task("lint", () => {
+    return gulp.src("src/**/*.js")
+        .pipe(eslint())
+        .pipe(eslint.format());
+})

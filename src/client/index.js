@@ -19,7 +19,7 @@ Vue.mixin({
     },
 });
 
-let app = new Vue({
+new Vue({
     el: "#app",
     render: h => h(index),
 });
