@@ -39,5 +39,7 @@ module.exports = {
         "log"        : true,
         "GET"        : true,
         "millis"     : true,
+        "http"       : true,
+        "https"      : true,
     }
 };
