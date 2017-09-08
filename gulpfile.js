@@ -27,7 +27,7 @@ gulp.task("vue", () => {
 
     if(isProduction){
         br = br.transform(require("envify/custom")({
-                NODE_ENV: isProduction ? "production" : "development",
+                NODE_ENV: "production",
             }), {global: true})
             .transform("uglifyify", {global: true});
     }
