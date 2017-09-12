@@ -21,6 +21,7 @@
 <script>
 import buttonList from "./buttonList.vue";
 import sellerList from "./sellerList.vue";
+import {addSocketHook, emit} from "./socket.js";
 
 export default {
     components: {buttonList, sellerList},
@@ -58,7 +59,7 @@ export default {
 
             let a = this.currentBase;
             let b = this.currentOther;
-            this.$socket.emit("updatecurr", [a, b]);
+            emit("updatecurr", [a, b]);
         },
         setBase(id, val){
             this.currentBase = this.baseCurrencies[id];
@@ -72,7 +73,7 @@ export default {
         },
     },
     created(){
-        this.$socket.on("currency", dat => {
+        addSocketHook("currency", dat => {
             if(this.$isDev) localStorage.tmpRates = JSON.stringify(dat);
             this.currency = dat;
         });

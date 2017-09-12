@@ -4,6 +4,9 @@ global.http = require("http");
 global.https = require("https");
 global.fs = Promise.promisifyAll(require("fs"));
 
+global.CLIENT = false;
+global.SERVER = true;
+
 global.GET = url => {
     return new Promise((resolve, reject) => {
         (url.startsWith("https") ? https : http).get(url, res => {

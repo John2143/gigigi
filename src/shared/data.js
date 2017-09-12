@@ -1,5 +1,8 @@
 //This file is for data dumps, not for people
 
+export const wsPort = 6002;
+export const svPort = 6001;
+
 //Name and abbriv of every currency
 export const currencyAbbrList = [
     [0, "", []],
