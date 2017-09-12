@@ -2,13 +2,12 @@
 import Vue from "vue";
 import index from "./index.vue";
 import * as constData from "../shared/data.js";
-import io from "socket.io-client/dist/socket.io.slim.js";
+import {startSocket} from "./socket.js";
 
-Vue.prototype.$socket = io();
-//Vue.prototype.$socket = {emit: () => {}, on: () => {}};
+startSocket();
 Vue.prototype.$constData = constData;
 Vue.prototype.$LEAGUE = "Harbinger";
-Vue.prototype.$isDev = true;
+Vue.prototype.$isDev = !PRODUCTION;
 
 Vue.mixin({
     methods: {

@@ -4,6 +4,8 @@
     </div>
 </template>
 <script>
+import {addSocketHook} from "./socket.js";
+
 export default {
     data(){
         return {
@@ -30,7 +32,7 @@ export default {
             this.sounds[file].volume = .1;
         }
 
-        this.$socket.on("alert", (...r) => this.addAlert(...r));
+        addSocketHook("alert", (...r) => this.addAlert(...r));
     }
 }
 </script>

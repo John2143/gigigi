@@ -1,8 +1,10 @@
 
-import * as constData from "./data.js";
-import * as url from "url";
+import {svPort, wsPort} from "./data.js";
+import {applySocketHook, wserialize, wdeserialize} from "./funcs.js";
+import url from "url";
+import uws from "uws";
 
-let server = http.createServer((req, res) => {
+export let server = http.createServer((req, res) => {
     let path = url.parse(req.url).pathname;
 
     //Default to index.html
@@ -22,34 +24,37 @@ let server = http.createServer((req, res) => {
     }
 });
 
-let io = require("socket.io")(server);
+export let wss = new uws.Server({port: wsPort});
 
-export const emit = (...r) => io.emit(...r);
+export const emitOne = (socket, ...r) => {
+    socket.send(wserialize(...r));
+};
+
+export const emit = (...r) => {
+    for(let client of wss.clients){
+        if(client.readyState === uws.OPEN){
+            emitOne(client, ...r);
+        }
+    }
+};
 
 export async function runServer(){
-    server.listen(6001);
+    server.listen(svPort);
 }
 
 export async function stopServer(){
     server.close();
 }
 
-let extraHooks = {};
-export function addSocketHook(name, hook){
-    extraHooks[name] = hook;
-}
+export {addSocketHook} from "./funcs.js";
 
-io.on("connection", socket => {
+wss.on("connection", socket => {
     console.log("socket connection");
-    emit("connected");
-    socket.emit("youconnected");
-    for(let hook in extraHooks){
-        socket.on(hook, function(data){
-            extraHooks[hook].call(null, this, data);
-        });
-    }
-});
 
-addSocketHook("requestdata", sock => {
-    sock.emit("requestdata", constData);
+    socket.on("message", function(raw){
+        applySocketHook(socket, raw);
+    });
+    socket.emit = function(...r){
+        emitOne(socket, ...r);
+    };
 });
