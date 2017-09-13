@@ -3,6 +3,7 @@ global.Promise = require("bluebird");
 global.http = require("http");
 global.https = require("https");
 global.fs = Promise.promisifyAll(require("fs"));
+global.chalk = require("chalk");
 
 global.CLIENT = false;
 global.SERVER = true;
@@ -17,14 +18,16 @@ global.GET = url => {
     });
 };
 
+import {dateToString as d2s} from "./misc.js";
+
 global.log = (...args) => {
-    console.log(new Date(), ...args);
+    console.log(chalk`[{grey ${d2s("r")}}]`, ...args);
 };
 
 global.millis = () => new Date().getTime();
 global.LEAGUE = "Harbinger";
 
-{
++function(){
     let flagName = null;
     let flags = {};
 
@@ -44,4 +47,4 @@ global.LEAGUE = "Harbinger";
     if(flagName) flags[flagName] = true;
 
     global.processFlags = flags;
-}
+}();

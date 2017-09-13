@@ -4,7 +4,8 @@ module.exports = {
         "node": true,
         "mocha": true,
         "mongo": true,
-        "es6": true
+        "es6": true,
+        "browser": true,
     },
     "extends": "eslint:recommended",
     "parser": "babel-eslint",
@@ -41,5 +42,9 @@ module.exports = {
         "millis"     : true,
         "http"       : true,
         "https"      : true,
+        "CLIENT"     : true,
+        "SERVER"     : true,
+        "PRODUCTION" : true,
+        "chalk"      : true,
     }
 };

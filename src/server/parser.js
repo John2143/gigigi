@@ -3,7 +3,7 @@ import PriceTag from "./PriceTag.js";
 
 const refineName = name => name.replace(/<<.+>>/g, "");
 
-const refineSocketData = sockets => {
+function refineSocketData(sockets){
     //The longest link in the item
     let maxlink = 0;
 
@@ -32,9 +32,9 @@ const refineSocketData = sockets => {
     }
 
     return {sockets: sockets.length, linkstr, maxlink};
-};
+}
 
-const compactProperties = props => {
+function compactProperties(props){
     if(!props) return;
 
     let newProps = {};
@@ -42,9 +42,9 @@ const compactProperties = props => {
         let key = prop.name.toLowerCase().replace(" ", "_");
         if(prop.values && prop.values[0]) newProps[key] = prop.values[0][0];
     }
-};
+}
 
-export const parseItem = (stash, it) => {
+export function parseItem(stash, it){
     it.fullName = (it.name ? it.name + " " : "") + it.typeLine;
 
     //remove localization tags
@@ -57,9 +57,9 @@ export const parseItem = (stash, it) => {
     it.newReqs = compactProperties(it.requirements);
 
     itemFilter(stash, it);
-};
+}
 
-export const parseStash = stash => {
+export function parseStash(stash){
     //idk what this means
     if(stash.accountName == null) return;
 
@@ -68,4 +68,4 @@ export const parseStash = stash => {
     for(let item of stash.items){
         parseItem(stash, item);
     }
-};
+}

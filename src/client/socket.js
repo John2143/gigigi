@@ -16,7 +16,7 @@ export function emit(name, data){
 
 export function startSocket(){
     socket = new WebSocket(`ws://${document.domain}:${wsPort}`);
-    socket.onopen = function(ev){
+    socket.onopen = function(_ev){
         console.log("connected to server");
     };
     socket.onmessage = function(raw){
@@ -26,7 +26,7 @@ export function startSocket(){
         console.log("websocket closing: " + ev.reason, ev.code, ev.wasClean);
         socket = null;
     };
-};
+}
 
 addSocketHook("log", data => {
     if(!PRODUCTION){
