@@ -1,13 +1,13 @@
 
 //WS serialize and deserialize
-export const wserialize = (name, data) => {
+export function wserialize(name, data){
     return JSON.stringify({name, data});
-};
+}
 
-export const wdeserialize = (raw) => {
+export function wdeserialize(raw){
     let parsed = JSON.parse(raw);
     return [parsed.name, parsed.data];
-};
+}
 
 let hooks = {};
 export function addSocketHook(name, hook){
@@ -24,11 +24,19 @@ export function applySocketHook(sock, raw){
                 hooks[hook].call(null, data);
             }
         }else{
-            console.log("Tried to call invalid hook " + hook + " with data: ", data);
+            if(SERVER){
+                log(chalk`Tried to call invalid hook {cyan ${hook}} with data {magenta ${data}}`);
+            }else{
+                console.log(`Tried to call invalid hook ${hook} with data ${data}`);
+            }
         }
     }catch(e){
         if(e instanceof SyntaxError){
-            console.log("Invalid json passed via ws", raw);
+            if(SERVER){
+                log(chalk`Invalid json passed via ws {grey ${raw}}`);
+            }else{
+                console.log("Invalid json passed via ws", raw);
+            }
         }
     }
-};
+}

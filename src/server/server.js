@@ -1,6 +1,6 @@
 
 import {svPort, wsPort} from "./data.js";
-import {applySocketHook, wserialize, wdeserialize} from "./funcs.js";
+import {applySocketHook, wserialize} from "./funcs.js";
 import url from "url";
 import uws from "uws";
 
@@ -26,17 +26,17 @@ export let server = http.createServer((req, res) => {
 
 export let wss = new uws.Server({port: wsPort});
 
-export const emitOne = (socket, ...r) => {
+export function emitOne(socket, ...r){
     socket.send(wserialize(...r));
-};
+}
 
-export const emit = (...r) => {
+export function emit(...r){
     for(let client of wss.clients){
         if(client.readyState === uws.OPEN){
             emitOne(client, ...r);
         }
     }
-};
+}
 
 export async function runServer(){
     server.listen(svPort);
@@ -48,10 +48,17 @@ export async function stopServer(){
 
 export {addSocketHook} from "./funcs.js";
 
+let globalID = 0;
 wss.on("connection", socket => {
-    console.log("socket connection");
+    socket.gID = globalID++;
 
+    log(chalk`Socket connection {green opened} {cyan ${socket.gID}}`);
+
+    socket.on("close", function(raw){
+        log(chalk`Socket connection {red closed} {cyan ${socket.gID}}`);
+    });
     socket.on("message", function(raw){
+        log(chalk`Socket message {cyan ${socket.gID}}`);
         applySocketHook(socket, raw);
     });
     socket.emit = function(...r){

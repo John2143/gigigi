@@ -5,6 +5,7 @@ let babel = require("gulp-babel");
 let changed = require("gulp-changed");
 let gutil = require("gulp-util");
 let concat = require("gulp-concat");
+let plumber = require("gulp-plumber");
 
 let rollup = require("rollup");
 let rollupBabel = require("rollup-plugin-babel");
@@ -70,8 +71,31 @@ gulp.task("css", () => {
         .pipe(gulp.dest("client"));
 });
 
+let taskHasError;
+let chalk = require("chalk");
+function handleError(e){
+    taskHasError = true;
+    if(e.name === "SyntaxError"){
+        handleSyntaxError(e);
+    }else{
+        gutil.log(chalk`{red ${e}}`);
+    }
+}
+
+function handleSyntaxError(e){
+    let message = /(.+?): ([^(]+)/g.exec(e.message);
+    if(message){
+        gutil.log(chalk`{red ${e.name}} in {grey ${message[1]}} at {bold.cyan ${e.loc.line}}:{bold.cyan ${e.loc.column}}`);
+        gutil.log(chalk`{red.bold ${message[2]}}\n${e.codeFrame}\n`);
+    }else{
+        gutil.log(chalk.red(e.message) + "\n" + e.codeFrame + "\n");
+    }
+}
+
 gulp.task("server", () => {
+    taskHasError = false;
     return gulp.src(["src/shared/**/*.js", "src/server/**/*.js"])
+        .pipe(plumber(handleError))
         .pipe(changed("server"))
         .pipe(babel({
             presets: [
@@ -86,7 +110,14 @@ gulp.task("server", () => {
                 "transform-decorators-legacy",
             ]
         }))
-        .pipe(gulp.dest("server"));
+        .pipe(gulp.dest("server"))
+        .on("end", x => {
+            if(taskHasError){
+                gutil.log(chalk`{red Build failed.}`);
+            }else{
+                gutil.log(chalk`{green Build completed sucessfully.}`);
+            }
+        });
 });
 
 gulp.task("watchclient", () => {
