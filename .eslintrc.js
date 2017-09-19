@@ -4,12 +4,13 @@ module.exports = {
         "node": true,
         "mocha": true,
         "mongo": true,
-        "es6": true
+        "es6": true,
+        "browser": true,
     },
     "extends": "eslint:recommended",
+    "parser": "babel-eslint",
     "parserOptions": {
         "sourceType": "module",
-        "ecmaVersion": 8
     },
     "rules": {
         "indent": [
@@ -39,5 +40,11 @@ module.exports = {
         "log"        : true,
         "GET"        : true,
         "millis"     : true,
+        "http"       : true,
+        "https"      : true,
+        "CLIENT"     : true,
+        "SERVER"     : true,
+        "PRODUCTION" : true,
+        "chalk"      : true,
     }
 };

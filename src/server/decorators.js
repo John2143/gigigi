@@ -1,4 +1,4 @@
-export const cache = (target, key, desc) => {
+export function cache(target, key, desc){
     let cachedVal;
 
     let oldget = desc.get;
@@ -9,12 +9,12 @@ export const cache = (target, key, desc) => {
     desc.set = function(val){
         cachedVal = val;
     };
-};
+}
 
-global.filterFuncs = [];
+export let filterFuncs = [];
 
 export const alert = sound => (target, key, desc) => {
-    console.log(`adding ${key} filter`);
+    log(chalk`adding {magenta ${key}} filter`);
     filterFuncs.push({func: desc.value, desc: key, sound});
 };
 

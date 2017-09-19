@@ -1,8 +1,7 @@
-require('source-map-support').install();
+require("source-map-support").install();
 import "./global.js";
 
-import {parseStash} from "./parser.js";
-import {emit, runServer} from "./server.js";
+import {runServer} from "./server.js";
 import {runIndexer} from "./indexer.js";
 import "./currencyRates.js";
 
@@ -15,5 +14,5 @@ export async function runAll(){
 if(require.main === module){
     //Indexer is not started by default, its a big resource hog
     runServer();
-    if(processFlags.i) runIndexer();
-};
+    if(global.processFlags.i) runIndexer();
+}

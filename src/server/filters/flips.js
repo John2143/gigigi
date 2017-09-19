@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import {whoop, quiet, alert, ding} from "../decorators.js";
 import PriceTag from "../PriceTag.js";
 
